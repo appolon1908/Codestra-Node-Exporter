@@ -1,0 +1,2168 @@
+{
+  "schema_version": 1,
+  "repository": "appolon1908/Codestra-Node-Exporter",
+  "scope": "frozen-vendor-documentation-additions-only",
+  "application_source_allowed": false,
+  "reviewed_base_sha": "b764b23c81c29bf55c52bd3f4f3e1bae0d1a3ae8",
+  "reviewed_base_tree": "0934aec23bb7cc366114a4a88817891b89d76024",
+  "baseline_files": [
+    ".github/copilot-instructions.md",
+    ".github/workflows/codestra-deploy-readiness.yml",
+    ".github/workflows/monitoring-record.yml",
+    ".github/workflows/upstream-source-sync.yml",
+    "AGENTS.md",
+    "CLAUDE.md",
+    "CODESTRA_HOSTNAME.json",
+    "CODESTRA_UPSTREAM.json",
+    "CODESTRA_UPSTREAM_LOCK.json",
+    "MONITORING-INTEGRATION.md",
+    "README.md",
+    "REPO_AUTHORITY.md",
+    "docs/ARCHITECTURE-CHARTS.md",
+    "docs/CODESTRA-MEDIA-AUTHORITY.md",
+    "monitoring-integration.v1.json",
+    "upstream/.dockerignore",
+    "upstream/.github/ISSUE_TEMPLATE.md",
+    "upstream/.github/dependabot.yml",
+    "upstream/.github/workflows/approve-workflows.yml",
+    "upstream/.github/workflows/bsd.yml",
+    "upstream/.github/workflows/ci.yml",
+    "upstream/.github/workflows/container_description.yml",
+    "upstream/.github/workflows/golangci-lint.yml",
+    "upstream/.github/workflows/govulncheck.yml",
+    "upstream/.gitignore",
+    "upstream/.golangci.yml",
+    "upstream/.promu-cgo.yml",
+    "upstream/.promu.yml",
+    "upstream/.yamllint",
+    "upstream/AGENTS.md",
+    "upstream/CHANGELOG.md",
+    "upstream/CODE_OF_CONDUCT.md",
+    "upstream/CONTRIBUTING.md",
+    "upstream/Dockerfile",
+    "upstream/Dockerfile.distroless",
+    "upstream/LICENSE",
+    "upstream/MAINTAINERS.md",
+    "upstream/Makefile",
+    "upstream/Makefile.common",
+    "upstream/NOTICE",
+    "upstream/README.md",
+    "upstream/SECURITY.md",
+    "upstream/VERSION",
+    "upstream/checkmetrics.sh",
+    "upstream/collector/arp_linux.go",
+    "upstream/collector/bcache_linux.go",
+    "upstream/collector/bcachefs_linux.go",
+    "upstream/collector/bonding_linux.go",
+    "upstream/collector/bonding_linux_test.go",
+    "upstream/collector/boot_time_bsd.go",
+    "upstream/collector/boot_time_solaris.go",
+    "upstream/collector/btrfs_linux.go",
+    "upstream/collector/btrfs_linux_test.go",
+    "upstream/collector/buddyinfo.go",
+    "upstream/collector/cgroups_linux.go",
+    "upstream/collector/collector.go",
+    "upstream/collector/conntrack_linux.go",
+    "upstream/collector/cpu_aix.go",
+    "upstream/collector/cpu_common.go",
+    "upstream/collector/cpu_darwin.go",
+    "upstream/collector/cpu_dragonfly.go",
+    "upstream/collector/cpu_dragonfly_test.go",
+    "upstream/collector/cpu_freebsd.go",
+    "upstream/collector/cpu_linux.go",
+    "upstream/collector/cpu_linux_test.go",
+    "upstream/collector/cpu_netbsd.go",
+    "upstream/collector/cpu_netbsd_test.go",
+    "upstream/collector/cpu_openbsd.go",
+    "upstream/collector/cpu_solaris.go",
+    "upstream/collector/cpu_vulnerabilities_linux.go",
+    "upstream/collector/cpufreq_common.go",
+    "upstream/collector/cpufreq_linux.go",
+    "upstream/collector/cpufreq_linux_test.go",
+    "upstream/collector/cpufreq_solaris.go",
+    "upstream/collector/device_filter.go",
+    "upstream/collector/device_filter_test.go",
+    "upstream/collector/devstat_dragonfly.go",
+    "upstream/collector/devstat_freebsd.c",
+    "upstream/collector/devstat_freebsd.go",
+    "upstream/collector/devstat_freebsd.h",
+    "upstream/collector/diskstats_aix.go",
+    "upstream/collector/diskstats_common.go",
+    "upstream/collector/diskstats_darwin.go",
+    "upstream/collector/diskstats_linux.go",
+    "upstream/collector/diskstats_linux_test.go",
+    "upstream/collector/diskstats_openbsd.go",
+    "upstream/collector/diskstats_openbsd_amd64.go",
+    "upstream/collector/dmi.go",
+    "upstream/collector/dmmultipath_linux.go",
+    "upstream/collector/dmmultipath_linux_test.go",
+    "upstream/collector/drbd_linux.go",
+    "upstream/collector/drm_linux.go",
+    "upstream/collector/edac_linux.go",
+    "upstream/collector/entropy_linux.go",
+    "upstream/collector/ethtool_linux.go",
+    "upstream/collector/ethtool_linux_test.go",
+    "upstream/collector/exec_bsd.go",
+    "upstream/collector/fibrechannel_linux.go",
+    "upstream/collector/fibrechannel_linux_test.go",
+    "upstream/collector/filefd_linux.go",
+    "upstream/collector/filefd_linux_test.go",
+    "upstream/collector/filesystem_aix.go",
+    "upstream/collector/filesystem_bsd.go",
+    "upstream/collector/filesystem_common.go",
+    "upstream/collector/filesystem_freebsd.go",
+    "upstream/collector/filesystem_linux.go",
+    "upstream/collector/filesystem_linux_test.go",
+    "upstream/collector/filesystem_macos.go",
+    "upstream/collector/filesystem_netbsd.go",
+    "upstream/collector/filesystem_openbsd.go",
+    "upstream/collector/fixtures/e2e-64k-page-output.txt",
+    "upstream/collector/fixtures/e2e-output-darwin.txt",
+    "upstream/collector/fixtures/e2e-output-dragonfly.txt",
+    "upstream/collector/fixtures/e2e-output-freebsd.txt",
+    "upstream/collector/fixtures/e2e-output-netbsd.txt",
+    "upstream/collector/fixtures/e2e-output-openbsd.txt",
+    "upstream/collector/fixtures/e2e-output-solaris.txt",
+    "upstream/collector/fixtures/e2e-output.txt",
+    "upstream/collector/fixtures/ethtool/bond0/statistics",
+    "upstream/collector/fixtures/ethtool/eth0/driver",
+    "upstream/collector/fixtures/ethtool/eth0/settings",
+    "upstream/collector/fixtures/ethtool/eth0/statistics",
+    "upstream/collector/fixtures/ip_vs_result.txt",
+    "upstream/collector/fixtures/ip_vs_result_lbs_local_address_local_port.txt",
+    "upstream/collector/fixtures/ip_vs_result_lbs_local_port.txt",
+    "upstream/collector/fixtures/ip_vs_result_lbs_none.txt",
+    "upstream/collector/fixtures/pci.ids",
+    "upstream/collector/fixtures/pcidevice-names-output.txt",
+    "upstream/collector/fixtures/proc/1/mountinfo",
+    "upstream/collector/fixtures/proc/1/stat",
+    "upstream/collector/fixtures/proc/10/mountinfo",
+    "upstream/collector/fixtures/proc/10/mountstats",
+    "upstream/collector/fixtures/proc/10/stat",
+    "upstream/collector/fixtures/proc/11/.missing_stat",
+    "upstream/collector/fixtures/proc/11/stat",
+    "upstream/collector/fixtures/proc/buddyinfo",
+    "upstream/collector/fixtures/proc/cgroups",
+    "upstream/collector/fixtures/proc/cpuinfo",
+    "upstream/collector/fixtures/proc/diskstats",
+    "upstream/collector/fixtures/proc/drbd",
+    "upstream/collector/fixtures/proc/interrupts",
+    "upstream/collector/fixtures/proc/interrupts_aarch64",
+    "upstream/collector/fixtures/proc/loadavg",
+    "upstream/collector/fixtures/proc/mdstat",
+    "upstream/collector/fixtures/proc/meminfo",
+    "upstream/collector/fixtures/proc/net/arp",
+    "upstream/collector/fixtures/proc/net/ip_vs",
+    "upstream/collector/fixtures/proc/net/ip_vs_stats",
+    "upstream/collector/fixtures/proc/net/netstat",
+    "upstream/collector/fixtures/proc/net/rpc/nfs",
+    "upstream/collector/fixtures/proc/net/rpc/nfsd",
+    "upstream/collector/fixtures/proc/net/snmp",
+    "upstream/collector/fixtures/proc/net/snmp6",
+    "upstream/collector/fixtures/proc/net/sockstat",
+    "upstream/collector/fixtures/proc/net/sockstat6",
+    "upstream/collector/fixtures/proc/net/softnet_stat",
+    "upstream/collector/fixtures/proc/net/stat/arp_cache",
+    "upstream/collector/fixtures/proc/net/stat/ndisc_cache",
+    "upstream/collector/fixtures/proc/net/stat/nf_conntrack",
+    "upstream/collector/fixtures/proc/net/udp",
+    "upstream/collector/fixtures/proc/net/xfrm_stat",
+    "upstream/collector/fixtures/proc/pressure/cpu",
+    "upstream/collector/fixtures/proc/pressure/io",
+    "upstream/collector/fixtures/proc/pressure/irq",
+    "upstream/collector/fixtures/proc/pressure/memory",
+    "upstream/collector/fixtures/proc/schedstat",
+    "upstream/collector/fixtures/proc/self",
+    "upstream/collector/fixtures/proc/slabinfo",
+    "upstream/collector/fixtures/proc/softirqs",
+    "upstream/collector/fixtures/proc/spl/kstat/zfs/abdstats",
+    "upstream/collector/fixtures/proc/spl/kstat/zfs/arcstats",
+    "upstream/collector/fixtures/proc/spl/kstat/zfs/dbufstats",
+    "upstream/collector/fixtures/proc/spl/kstat/zfs/dmu_tx",
+    "upstream/collector/fixtures/proc/spl/kstat/zfs/dnodestats",
+    "upstream/collector/fixtures/proc/spl/kstat/zfs/fm",
+    "upstream/collector/fixtures/proc/spl/kstat/zfs/pool1/io",
+    "upstream/collector/fixtures/proc/spl/kstat/zfs/pool1/objset-1",
+    "upstream/collector/fixtures/proc/spl/kstat/zfs/pool1/objset-2",
+    "upstream/collector/fixtures/proc/spl/kstat/zfs/pool1/state",
+    "upstream/collector/fixtures/proc/spl/kstat/zfs/pool2/state",
+    "upstream/collector/fixtures/proc/spl/kstat/zfs/pool3/io",
+    "upstream/collector/fixtures/proc/spl/kstat/zfs/pool3/objset-1",
+    "upstream/collector/fixtures/proc/spl/kstat/zfs/pool3/objset-2",
+    "upstream/collector/fixtures/proc/spl/kstat/zfs/pool3/state",
+    "upstream/collector/fixtures/proc/spl/kstat/zfs/poolz1/io",
+    "upstream/collector/fixtures/proc/spl/kstat/zfs/poolz1/objset-1",
+    "upstream/collector/fixtures/proc/spl/kstat/zfs/poolz1/objset-2",
+    "upstream/collector/fixtures/proc/spl/kstat/zfs/poolz1/state",
+    "upstream/collector/fixtures/proc/spl/kstat/zfs/vdev_cache_stats",
+    "upstream/collector/fixtures/proc/spl/kstat/zfs/vdev_mirror_stats",
+    "upstream/collector/fixtures/proc/spl/kstat/zfs/xuio_stats",
+    "upstream/collector/fixtures/proc/spl/kstat/zfs/zfetchstats",
+    "upstream/collector/fixtures/proc/spl/kstat/zfs/zil",
+    "upstream/collector/fixtures/proc/stat",
+    "upstream/collector/fixtures/proc/swaps",
+    "upstream/collector/fixtures/proc/sys/fs/file-nr",
+    "upstream/collector/fixtures/proc/sys/kernel/hung_task_detect_count",
+    "upstream/collector/fixtures/proc/sys/kernel/pid_max",
+    "upstream/collector/fixtures/proc/sys/kernel/random/entropy_avail",
+    "upstream/collector/fixtures/proc/sys/kernel/random/poolsize",
+    "upstream/collector/fixtures/proc/sys/kernel/seccomp/actions_avail",
+    "upstream/collector/fixtures/proc/sys/kernel/threads-max",
+    "upstream/collector/fixtures/proc/sys/net/netfilter/nf_conntrack_count",
+    "upstream/collector/fixtures/proc/sys/net/netfilter/nf_conntrack_max",
+    "upstream/collector/fixtures/proc/sys/pid_max",
+    "upstream/collector/fixtures/proc/sys/threads-max",
+    "upstream/collector/fixtures/proc/vmstat",
+    "upstream/collector/fixtures/proc/zoneinfo",
+    "upstream/collector/fixtures/qdisc/results.json",
+    "upstream/collector/fixtures/sys.ttar",
+    "upstream/collector/fixtures/textfile/client_side_timestamp.out",
+    "upstream/collector/fixtures/textfile/client_side_timestamp/metrics.prom",
+    "upstream/collector/fixtures/textfile/different_metric_types.out",
+    "upstream/collector/fixtures/textfile/different_metric_types/metrics.prom",
+    "upstream/collector/fixtures/textfile/glob_extra_dimension.out",
+    "upstream/collector/fixtures/textfile/histogram.out",
+    "upstream/collector/fixtures/textfile/histogram/metrics.prom",
+    "upstream/collector/fixtures/textfile/histogram_extra_dimension.out",
+    "upstream/collector/fixtures/textfile/histogram_extra_dimension/metrics.prom",
+    "upstream/collector/fixtures/textfile/inconsistent_metrics.out",
+    "upstream/collector/fixtures/textfile/inconsistent_metrics/metrics.prom",
+    "upstream/collector/fixtures/textfile/metrics_merge_different_help.out",
+    "upstream/collector/fixtures/textfile/metrics_merge_different_help/a.prom",
+    "upstream/collector/fixtures/textfile/metrics_merge_different_help/b.prom",
+    "upstream/collector/fixtures/textfile/metrics_merge_empty_help.out",
+    "upstream/collector/fixtures/textfile/metrics_merge_empty_help/a.prom",
+    "upstream/collector/fixtures/textfile/metrics_merge_empty_help/b.prom",
+    "upstream/collector/fixtures/textfile/metrics_merge_no_help.out",
+    "upstream/collector/fixtures/textfile/metrics_merge_no_help/a.prom",
+    "upstream/collector/fixtures/textfile/metrics_merge_no_help/b.prom",
+    "upstream/collector/fixtures/textfile/metrics_merge_same_help.out",
+    "upstream/collector/fixtures/textfile/metrics_merge_same_help/a.prom",
+    "upstream/collector/fixtures/textfile/metrics_merge_same_help/b.prom",
+    "upstream/collector/fixtures/textfile/no_metric_files.out",
+    "upstream/collector/fixtures/textfile/no_metric_files/non_matching_file.txt",
+    "upstream/collector/fixtures/textfile/nonexistent_path.out",
+    "upstream/collector/fixtures/textfile/summary.out",
+    "upstream/collector/fixtures/textfile/summary/metrics.prom",
+    "upstream/collector/fixtures/textfile/summary_extra_dimension.out",
+    "upstream/collector/fixtures/textfile/summary_extra_dimension/metrics.prom",
+    "upstream/collector/fixtures/textfile/two_metric_files.out",
+    "upstream/collector/fixtures/textfile/two_metric_files/metrics1.prom",
+    "upstream/collector/fixtures/textfile/two_metric_files/metrics2.prom",
+    "upstream/collector/fixtures/textfile/two_metric_files/non_matching_file.txt",
+    "upstream/collector/fixtures/udev.ttar",
+    "upstream/collector/fixtures/usr/lib/os-release",
+    "upstream/collector/fixtures/wifi/interfaces.json",
+    "upstream/collector/fixtures/wifi/wlan0/bss.json",
+    "upstream/collector/fixtures/wifi/wlan0/stationinfo.json",
+    "upstream/collector/fixtures_bindmount/proc/1/mountinfo",
+    "upstream/collector/fixtures_hidepid/proc/self/mountinfo",
+    "upstream/collector/helper.go",
+    "upstream/collector/helper_linux.go",
+    "upstream/collector/helper_test.go",
+    "upstream/collector/hwmon_linux.go",
+    "upstream/collector/hwmon_linux_test.go",
+    "upstream/collector/infiniband_linux.go",
+    "upstream/collector/interrupts_common.go",
+    "upstream/collector/interrupts_linux.go",
+    "upstream/collector/interrupts_linux_test.go",
+    "upstream/collector/interrupts_openbsd.go",
+    "upstream/collector/interrupts_openbsd_amd64.go",
+    "upstream/collector/ipvs_linux.go",
+    "upstream/collector/ipvs_linux_test.go",
+    "upstream/collector/kernel_hung_linux.go",
+    "upstream/collector/ksmd_linux.go",
+    "upstream/collector/kvm_bsd.c",
+    "upstream/collector/kvm_bsd.go",
+    "upstream/collector/kvm_bsd.h",
+    "upstream/collector/lnstat_linux.go",
+    "upstream/collector/loadavg.go",
+    "upstream/collector/loadavg_aix.go",
+    "upstream/collector/loadavg_bsd.go",
+    "upstream/collector/loadavg_linux.go",
+    "upstream/collector/loadavg_linux_test.go",
+    "upstream/collector/loadavg_solaris.go",
+    "upstream/collector/logind_linux.go",
+    "upstream/collector/logind_linux_test.go",
+    "upstream/collector/mdadm_linux.go",
+    "upstream/collector/mdadm_linux_test.go",
+    "upstream/collector/meminfo.go",
+    "upstream/collector/meminfo_aix.go",
+    "upstream/collector/meminfo_darwin.go",
+    "upstream/collector/meminfo_linux.go",
+    "upstream/collector/meminfo_linux_test.go",
+    "upstream/collector/meminfo_netbsd.go",
+    "upstream/collector/meminfo_numa_linux.go",
+    "upstream/collector/meminfo_numa_linux_test.go",
+    "upstream/collector/meminfo_openbsd.go",
+    "upstream/collector/meminfo_openbsd_amd64.go",
+    "upstream/collector/memory_bsd.go",
+    "upstream/collector/mountstats_linux.go",
+    "upstream/collector/mountstats_linux_test.go",
+    "upstream/collector/netclass_linux.go",
+    "upstream/collector/netclass_rtnl_linux.go",
+    "upstream/collector/netdev_aix.go",
+    "upstream/collector/netdev_bsd.go",
+    "upstream/collector/netdev_common.go",
+    "upstream/collector/netdev_darwin.go",
+    "upstream/collector/netdev_linux.go",
+    "upstream/collector/netdev_linux_test.go",
+    "upstream/collector/netdev_openbsd.go",
+    "upstream/collector/netdev_openbsd_amd64.go",
+    "upstream/collector/netinterface_aix.go",
+    "upstream/collector/netisr_freebsd.go",
+    "upstream/collector/netstat_freebsd.go",
+    "upstream/collector/netstat_freebsd_test.go",
+    "upstream/collector/netstat_linux.go",
+    "upstream/collector/netstat_linux_test.go",
+    "upstream/collector/network_route_linux.go",
+    "upstream/collector/nfs_linux.go",
+    "upstream/collector/nfsd_linux.go",
+    "upstream/collector/ntp.go",
+    "upstream/collector/nvme_linux.go",
+    "upstream/collector/nvmesubsystem_linux.go",
+    "upstream/collector/nvmesubsystem_linux_test.go",
+    "upstream/collector/os_release.go",
+    "upstream/collector/os_release_test.go",
+    "upstream/collector/partition_aix.go",
+    "upstream/collector/paths.go",
+    "upstream/collector/paths_test.go",
+    "upstream/collector/pcidevice_linux.go",
+    "upstream/collector/pcidevice_linux_test.go",
+    "upstream/collector/perf_linux.go",
+    "upstream/collector/perf_linux_test.go",
+    "upstream/collector/powersupplyclass.go",
+    "upstream/collector/powersupplyclass_darwin.go",
+    "upstream/collector/powersupplyclass_linux.go",
+    "upstream/collector/pressure_linux.go",
+    "upstream/collector/processes_linux.go",
+    "upstream/collector/processes_linux_test.go",
+    "upstream/collector/qdisc_linux.go",
+    "upstream/collector/rapl_linux.go",
+    "upstream/collector/runit.go",
+    "upstream/collector/schedstat_linux.go",
+    "upstream/collector/selinux_linux.go",
+    "upstream/collector/slabinfo_linux.go",
+    "upstream/collector/sockstat_linux.go",
+    "upstream/collector/softirqs_common.go",
+    "upstream/collector/softirqs_linux.go",
+    "upstream/collector/softnet_linux.go",
+    "upstream/collector/stat_linux.go",
+    "upstream/collector/supervisord.go",
+    "upstream/collector/swap_linux.go",
+    "upstream/collector/swap_linux_test.go",
+    "upstream/collector/sysctl_bsd.go",
+    "upstream/collector/sysctl_linux.go",
+    "upstream/collector/sysctl_openbsd_amd64.go",
+    "upstream/collector/systemd_linux.go",
+    "upstream/collector/systemd_linux_test.go",
+    "upstream/collector/tapestats_linux.go",
+    "upstream/collector/tcpstat_linux.go",
+    "upstream/collector/tcpstat_linux_test.go",
+    "upstream/collector/textfile.go",
+    "upstream/collector/textfile_test.go",
+    "upstream/collector/thermal_darwin.go",
+    "upstream/collector/thermal_darwin_amd64.go",
+    "upstream/collector/thermal_darwin_arm64.go",
+    "upstream/collector/thermal_zone_linux.go",
+    "upstream/collector/time.go",
+    "upstream/collector/time_linux.go",
+    "upstream/collector/time_other.go",
+    "upstream/collector/timex.go",
+    "upstream/collector/udp_queues_linux.go",
+    "upstream/collector/uname.go",
+    "upstream/collector/uname_bsd.go",
+    "upstream/collector/uname_linux.go",
+    "upstream/collector/utils.go",
+    "upstream/collector/utils_test.go",
+    "upstream/collector/vmstat_linux.go",
+    "upstream/collector/watchdog.go",
+    "upstream/collector/watchdog_test.go",
+    "upstream/collector/wifi_linux.go",
+    "upstream/collector/xfrm.go",
+    "upstream/collector/xfrm_test.go",
+    "upstream/collector/xfs_linux.go",
+    "upstream/collector/zfs_common.go",
+    "upstream/collector/zfs_freebsd.go",
+    "upstream/collector/zfs_linux.go",
+    "upstream/collector/zfs_linux_test.go",
+    "upstream/collector/zfs_solaris.go",
+    "upstream/collector/zoneinfo_linux.go",
+    "upstream/docs/TIME.md",
+    "upstream/docs/V0_16_UPGRADE_GUIDE.md",
+    "upstream/docs/example-16-compatibility-rules-new-to-old.yml",
+    "upstream/docs/example-16-compatibility-rules.yml",
+    "upstream/docs/example-17-compatibility-rules-new-to-old.yml",
+    "upstream/docs/example-17-compatibility-rules.yml",
+    "upstream/docs/node-mixin/.gitignore",
+    "upstream/docs/node-mixin/Makefile",
+    "upstream/docs/node-mixin/README.md",
+    "upstream/docs/node-mixin/alerts.jsonnet",
+    "upstream/docs/node-mixin/alerts/alerts.libsonnet",
+    "upstream/docs/node-mixin/config.libsonnet",
+    "upstream/docs/node-mixin/dashboards.jsonnet",
+    "upstream/docs/node-mixin/dashboards/dashboards.libsonnet",
+    "upstream/docs/node-mixin/dashboards/node.libsonnet",
+    "upstream/docs/node-mixin/dashboards/use.libsonnet",
+    "upstream/docs/node-mixin/jsonnetfile.json",
+    "upstream/docs/node-mixin/lib/prom-mixin.libsonnet",
+    "upstream/docs/node-mixin/mixin.libsonnet",
+    "upstream/docs/node-mixin/rules.jsonnet",
+    "upstream/docs/node-mixin/rules/rules.libsonnet",
+    "upstream/end-to-end-test.sh",
+    "upstream/example-rules.yml",
+    "upstream/examples/init.d/node_exporter",
+    "upstream/examples/launchctl/README.md",
+    "upstream/examples/launchctl/io.prometheus.node_exporter.plist",
+    "upstream/examples/openbsd-rc.d/node_exporter",
+    "upstream/examples/openwrt-init.d/node_exporter",
+    "upstream/examples/systemd/README.md",
+    "upstream/examples/systemd/node_exporter.service",
+    "upstream/examples/systemd/node_exporter.socket",
+    "upstream/examples/systemd/sysconfig.node_exporter",
+    "upstream/go.mod",
+    "upstream/go.sum",
+    "upstream/node_exporter.go",
+    "upstream/node_exporter_test.go",
+    "upstream/staticcheck.conf",
+    "upstream/test_image.sh",
+    "upstream/text_collector_examples/README.md",
+    "upstream/tls_config_noAuth.bad.yml",
+    "upstream/tools/main.go",
+    "upstream/ttar"
+  ],
+  "frozen_entries": {
+    ".github/copilot-instructions.md": {
+      "mode": "100644",
+      "blob": "b377a31eb1f063ad7583864774218e579dbb9511"
+    },
+    ".github/workflows/codestra-deploy-readiness.yml": {
+      "mode": "100644",
+      "blob": "95a9588b2fab5456fec1da4c3da8f4aeb1464bf6"
+    },
+    ".github/workflows/monitoring-record.yml": {
+      "mode": "100644",
+      "blob": "f6fe0f2e259c4662d23523c7d085313f9b7b5b52"
+    },
+    ".github/workflows/upstream-source-sync.yml": {
+      "mode": "100644",
+      "blob": "07b402380bdd9f9c5d10739671be3ccdf8e38d1b"
+    },
+    "AGENTS.md": {
+      "mode": "100644",
+      "blob": "f40b112ab45e0860b2d3266adda5f8ea74c0cdae"
+    },
+    "CLAUDE.md": {
+      "mode": "100644",
+      "blob": "b9e6478b26ddc3b6a355db913f326576b3485ac8"
+    },
+    "CODESTRA_HOSTNAME.json": {
+      "mode": "100644",
+      "blob": "1d924af569fc7afff77e02636cbed6380fa3daf3"
+    },
+    "CODESTRA_UPSTREAM.json": {
+      "mode": "100644",
+      "blob": "f2e7884e99774b107f12a6943851bedffba76a46"
+    },
+    "CODESTRA_UPSTREAM_LOCK.json": {
+      "mode": "100644",
+      "blob": "61824c820ae4b73a9f49492d9edc637a456ab106"
+    },
+    "MONITORING-INTEGRATION.md": {
+      "mode": "100644",
+      "blob": "b4d23883ed952dd9ba633fce1c0e5700d5b84172"
+    },
+    "README.md": {
+      "mode": "100644",
+      "blob": "4ef64e19f974a801bb184feaa20281a86843bd80"
+    },
+    "REPO_AUTHORITY.md": {
+      "mode": "100644",
+      "blob": "31fb53016fb6465b267630a773485413def5ee81"
+    },
+    "docs/ARCHITECTURE-CHARTS.md": {
+      "mode": "100644",
+      "blob": "70fc86abfed2d940d815e9979f2f7a5e5d8c8e15"
+    },
+    "docs/CODESTRA-MEDIA-AUTHORITY.md": {
+      "mode": "100644",
+      "blob": "9cb4d4b5274ce228e6934bffb65d65d0413e921d"
+    },
+    "monitoring-integration.v1.json": {
+      "mode": "100644",
+      "blob": "e369cdf3ce7cab9d024d6e97e3c90ca7c766dc46"
+    },
+    "upstream/.dockerignore": {
+      "mode": "100644",
+      "blob": "09670991552bf3f6c200d4e6cd146e7b345f8a31"
+    },
+    "upstream/.github/ISSUE_TEMPLATE.md": {
+      "mode": "100644",
+      "blob": "ff07009480513ece8e18e346d44946fce40c948c"
+    },
+    "upstream/.github/dependabot.yml": {
+      "mode": "100644",
+      "blob": "57d84104426f878495f53e3a0d175997112a2277"
+    },
+    "upstream/.github/workflows/approve-workflows.yml": {
+      "mode": "100644",
+      "blob": "f372012f2b7604210557924b857fd46f1b7fc7a1"
+    },
+    "upstream/.github/workflows/bsd.yml": {
+      "mode": "100644",
+      "blob": "9ba0346063e533127e2d7ec46506d7fefff6b2d0"
+    },
+    "upstream/.github/workflows/ci.yml": {
+      "mode": "100644",
+      "blob": "74d39c96d54db42c4856a228bd8157d525820089"
+    },
+    "upstream/.github/workflows/container_description.yml": {
+      "mode": "100644",
+      "blob": "ed4ada556dfe36468c91a8609eaad191c7f77a7c"
+    },
+    "upstream/.github/workflows/golangci-lint.yml": {
+      "mode": "100644",
+      "blob": "45704a95443c2a7580c12b081622718385898213"
+    },
+    "upstream/.github/workflows/govulncheck.yml": {
+      "mode": "100644",
+      "blob": "8c4deff9f808b0687ff9e1a47b04ff70e91e0be2"
+    },
+    "upstream/.gitignore": {
+      "mode": "100644",
+      "blob": "c1318db36f2fe8edd58e07e7b7fa367cb5ced970"
+    },
+    "upstream/.golangci.yml": {
+      "mode": "100644",
+      "blob": "4cb6899c98d0a8c70d8855430eab0a9b88d584ce"
+    },
+    "upstream/.promu-cgo.yml": {
+      "mode": "100644",
+      "blob": "aa40105c4f96ce48b69bc4934d6578c4b3b06774"
+    },
+    "upstream/.promu.yml": {
+      "mode": "100644",
+      "blob": "d0d602b6a6d563f1436fbdfb6744380283319c17"
+    },
+    "upstream/.yamllint": {
+      "mode": "100644",
+      "blob": "b52b0be4f0ae5307b6108a1e14d7b0878bc9161e"
+    },
+    "upstream/AGENTS.md": {
+      "mode": "100644",
+      "blob": "144e10e53239798d0ba92aca066d8c7f65af64f4"
+    },
+    "upstream/CHANGELOG.md": {
+      "mode": "100644",
+      "blob": "9f6040344b0d10a8149807b46913010484519d31"
+    },
+    "upstream/CODE_OF_CONDUCT.md": {
+      "mode": "100644",
+      "blob": "d325872bdfad8d09e1d8c638f914f655f738c77f"
+    },
+    "upstream/CONTRIBUTING.md": {
+      "mode": "100644",
+      "blob": "46f65e80c66fc86094a80e32e3ef0f9e304f22e5"
+    },
+    "upstream/Dockerfile": {
+      "mode": "100644",
+      "blob": "3686a54177a80ba1b0c350ce81f99cddf332a604"
+    },
+    "upstream/Dockerfile.distroless": {
+      "mode": "100644",
+      "blob": "37e096d6e4aa3367cda0807e37145318d4dfbfba"
+    },
+    "upstream/LICENSE": {
+      "mode": "100644",
+      "blob": "261eeb9e9f8b2b4b0d119366dda99c6fd7d35c64"
+    },
+    "upstream/MAINTAINERS.md": {
+      "mode": "100644",
+      "blob": "ffe90361c3d06d37acacca93561e3bfa2afcb689"
+    },
+    "upstream/Makefile": {
+      "mode": "100644",
+      "blob": "63f3991bba5fb680478fc5ba56f1db6f30f0b246"
+    },
+    "upstream/Makefile.common": {
+      "mode": "100644",
+      "blob": "cd54cb419cad98706b60ac7511f568032e376121"
+    },
+    "upstream/NOTICE": {
+      "mode": "100644",
+      "blob": "970a9b237a9f0b1b22fed182ac2eafcf5e7c65ed"
+    },
+    "upstream/README.md": {
+      "mode": "100644",
+      "blob": "713663132bff3f673db7b6f7af8dab3b65ace52d"
+    },
+    "upstream/SECURITY.md": {
+      "mode": "100644",
+      "blob": "5e6f976dbff3ac7dd867f0a5d225f04fe3db3f4c"
+    },
+    "upstream/VERSION": {
+      "mode": "100644",
+      "blob": "f8f4f03b3dcc5b1c3e07f49837a52e5429ce01fa"
+    },
+    "upstream/checkmetrics.sh": {
+      "mode": "100755",
+      "blob": "c3104ca1522a563b2358eddddbae7e7e20dfb591"
+    },
+    "upstream/collector/arp_linux.go": {
+      "mode": "100644",
+      "blob": "84d8920ad54d94383403a7e073a806876738a21d"
+    },
+    "upstream/collector/bcache_linux.go": {
+      "mode": "100644",
+      "blob": "90366cc32a49eb13dd4b72754f39d3b0f9d789bd"
+    },
+    "upstream/collector/bcachefs_linux.go": {
+      "mode": "100644",
+      "blob": "08aa47b2424be0997166669adc3488285534321e"
+    },
+    "upstream/collector/bonding_linux.go": {
+      "mode": "100644",
+      "blob": "a1e0a98735da4b5e56949667d1fd4af83f7f6bbb"
+    },
+    "upstream/collector/bonding_linux_test.go": {
+      "mode": "100644",
+      "blob": "874819225ce2f522bdb4afb789b2b5887c81d92d"
+    },
+    "upstream/collector/boot_time_bsd.go": {
+      "mode": "100644",
+      "blob": "fe1ddcac891afa1c449ca0eafe951c86b9d08cff"
+    },
+    "upstream/collector/boot_time_solaris.go": {
+      "mode": "100644",
+      "blob": "4b2ef4577cc64cc86df24b6ccfc1d994c7e5e23f"
+    },
+    "upstream/collector/btrfs_linux.go": {
+      "mode": "100644",
+      "blob": "bc6fb6048d55491f795f44fe53b563fd42366037"
+    },
+    "upstream/collector/btrfs_linux_test.go": {
+      "mode": "100644",
+      "blob": "7be7bc39bbecd9dbad1dc1ea9dfadd3dc997a399"
+    },
+    "upstream/collector/buddyinfo.go": {
+      "mode": "100644",
+      "blob": "82c58c32f20046c752fdf4f9ac9ca1ceb035824d"
+    },
+    "upstream/collector/cgroups_linux.go": {
+      "mode": "100644",
+      "blob": "adede992ea97200355472382d6f9afe5e3cbf1d0"
+    },
+    "upstream/collector/collector.go": {
+      "mode": "100644",
+      "blob": "167af5d741517cdf3925411ae6e16846ef80d3b7"
+    },
+    "upstream/collector/conntrack_linux.go": {
+      "mode": "100644",
+      "blob": "eeeb7d4bd904bb9bc52a569081ecf8ecaa9ba28d"
+    },
+    "upstream/collector/cpu_aix.go": {
+      "mode": "100644",
+      "blob": "1368f1b368116b78bf4a2c42c1ce45cfd29929f6"
+    },
+    "upstream/collector/cpu_common.go": {
+      "mode": "100644",
+      "blob": "cb34facbfa34581dcf20d7013594a94a6051cd3d"
+    },
+    "upstream/collector/cpu_darwin.go": {
+      "mode": "100644",
+      "blob": "e4e312aeb3462e725557c0bf02fc7d7f228d5fac"
+    },
+    "upstream/collector/cpu_dragonfly.go": {
+      "mode": "100644",
+      "blob": "3571f436d5354250de50b8ffb90e195b5da8db18"
+    },
+    "upstream/collector/cpu_dragonfly_test.go": {
+      "mode": "100644",
+      "blob": "c5d006fa9e125b26e5b7413178a72441e080f2bb"
+    },
+    "upstream/collector/cpu_freebsd.go": {
+      "mode": "100644",
+      "blob": "6532029ec1dbee4a820d6715910e4e92febe8c24"
+    },
+    "upstream/collector/cpu_linux.go": {
+      "mode": "100644",
+      "blob": "3b65a5734a4095e62f60b1a45ace1d424d66d9b6"
+    },
+    "upstream/collector/cpu_linux_test.go": {
+      "mode": "100644",
+      "blob": "6d4bc4506d5947c346df321b83961c81522a18e0"
+    },
+    "upstream/collector/cpu_netbsd.go": {
+      "mode": "100644",
+      "blob": "49051a6efd5fe0b8fc6c65e2ababc2cb4a74a152"
+    },
+    "upstream/collector/cpu_netbsd_test.go": {
+      "mode": "100644",
+      "blob": "4a872bffa9ee264198a2201d48d410204e49b2e1"
+    },
+    "upstream/collector/cpu_openbsd.go": {
+      "mode": "100644",
+      "blob": "2c8ce9a81fa8d0296e998be467647e8eea09a5ee"
+    },
+    "upstream/collector/cpu_solaris.go": {
+      "mode": "100644",
+      "blob": "471d29f03c5ac3143f702f9d7cd81aa1971801e6"
+    },
+    "upstream/collector/cpu_vulnerabilities_linux.go": {
+      "mode": "100644",
+      "blob": "155253b5f4c0b8c0100efd3b6d03ddf5f2668a9f"
+    },
+    "upstream/collector/cpufreq_common.go": {
+      "mode": "100644",
+      "blob": "64cbe7e4f0d2de2d373e43e854d702b97bd902d6"
+    },
+    "upstream/collector/cpufreq_linux.go": {
+      "mode": "100644",
+      "blob": "3c759d55e5476e3ef0ed9668cbae3e44690193a7"
+    },
+    "upstream/collector/cpufreq_linux_test.go": {
+      "mode": "100644",
+      "blob": "0b2a782ccb193ee17d18ee22970a6074c22fb0c4"
+    },
+    "upstream/collector/cpufreq_solaris.go": {
+      "mode": "100644",
+      "blob": "69b7c574006a658be3176cc859198b620aec4a6e"
+    },
+    "upstream/collector/device_filter.go": {
+      "mode": "100644",
+      "blob": "d8a38a297024906a7a65ee3f7d021814bc6899cc"
+    },
+    "upstream/collector/device_filter_test.go": {
+      "mode": "100644",
+      "blob": "7332f1cdb4b73ce8323a5ff49fa1ecc20626f75b"
+    },
+    "upstream/collector/devstat_dragonfly.go": {
+      "mode": "100644",
+      "blob": "28cc522831bcb3ebde32083fd6ec97fb51f3e606"
+    },
+    "upstream/collector/devstat_freebsd.c": {
+      "mode": "100644",
+      "blob": "43539b771503dfec6991d4895012c02e0627397b"
+    },
+    "upstream/collector/devstat_freebsd.go": {
+      "mode": "100644",
+      "blob": "0c8a11c9a020574117c6c151f71672a01d71ef66"
+    },
+    "upstream/collector/devstat_freebsd.h": {
+      "mode": "100644",
+      "blob": "b0cd4a1e476889d0766b94c951a9f5cdf97804e8"
+    },
+    "upstream/collector/diskstats_aix.go": {
+      "mode": "100644",
+      "blob": "f77eef06bda393392a19afa0df70d2eb90e6fd0b"
+    },
+    "upstream/collector/diskstats_common.go": {
+      "mode": "100644",
+      "blob": "c0737462f587ab94799e5512226b30febed2843a"
+    },
+    "upstream/collector/diskstats_darwin.go": {
+      "mode": "100644",
+      "blob": "abcf854083f372f66ca01fd3314fbc2502c723e6"
+    },
+    "upstream/collector/diskstats_linux.go": {
+      "mode": "100644",
+      "blob": "3794349725c4121453d71c4ec5282ccea4e592f7"
+    },
+    "upstream/collector/diskstats_linux_test.go": {
+      "mode": "100644",
+      "blob": "44f86c35bfccf28dcfacc265dec53b25ca2d1097"
+    },
+    "upstream/collector/diskstats_openbsd.go": {
+      "mode": "100644",
+      "blob": "c642a7bf6f36b924e02417ca272bbea43326841a"
+    },
+    "upstream/collector/diskstats_openbsd_amd64.go": {
+      "mode": "100644",
+      "blob": "bbb9e8b9336ba7cd5d4caaf5a367379a810db7a4"
+    },
+    "upstream/collector/dmi.go": {
+      "mode": "100644",
+      "blob": "575c331950c027403d20476d89307376e2bd4a8e"
+    },
+    "upstream/collector/dmmultipath_linux.go": {
+      "mode": "100644",
+      "blob": "72c5956f5d389cb11cc662523b0c113b1524da35"
+    },
+    "upstream/collector/dmmultipath_linux_test.go": {
+      "mode": "100644",
+      "blob": "86cc150a309a0a84e047bc7ae8fae9116bb92604"
+    },
+    "upstream/collector/drbd_linux.go": {
+      "mode": "100644",
+      "blob": "f3102700c9631060a0617dab9ba2a3cd5da14e32"
+    },
+    "upstream/collector/drm_linux.go": {
+      "mode": "100644",
+      "blob": "1739bc3d5438f4109db443b2e3c37510e0c8a032"
+    },
+    "upstream/collector/edac_linux.go": {
+      "mode": "100644",
+      "blob": "f5f95c20755cf6a4093550635e438fcd75d8d0a1"
+    },
+    "upstream/collector/entropy_linux.go": {
+      "mode": "100644",
+      "blob": "8e20981c63af9b8b331bcd3823351142d375bc41"
+    },
+    "upstream/collector/ethtool_linux.go": {
+      "mode": "100644",
+      "blob": "e4d86bcd8cbd27ac6316476b56e44e90aa2549ec"
+    },
+    "upstream/collector/ethtool_linux_test.go": {
+      "mode": "100644",
+      "blob": "84cca88897455dc9f709d6fcf3aae04c858e265f"
+    },
+    "upstream/collector/exec_bsd.go": {
+      "mode": "100644",
+      "blob": "d3e5f70f252d089fe2d88d291a03cecb5adcb7f6"
+    },
+    "upstream/collector/fibrechannel_linux.go": {
+      "mode": "100644",
+      "blob": "22628881c81042253f5229d9d5ca1d78bb040fd0"
+    },
+    "upstream/collector/fibrechannel_linux_test.go": {
+      "mode": "100644",
+      "blob": "d56fe211c068c087dd39c2d88087aab2f50a19ec"
+    },
+    "upstream/collector/filefd_linux.go": {
+      "mode": "100644",
+      "blob": "c24215c43c464fd61aec5e88534db216b2276f2a"
+    },
+    "upstream/collector/filefd_linux_test.go": {
+      "mode": "100644",
+      "blob": "b43c1ed29f68ac748605d92883670621b84d25f9"
+    },
+    "upstream/collector/filesystem_aix.go": {
+      "mode": "100644",
+      "blob": "e4db6bce99e9cecfcdee129bfe3982c9855541a2"
+    },
+    "upstream/collector/filesystem_bsd.go": {
+      "mode": "100644",
+      "blob": "79dde087c3901f404abcba74e440a56ae892b325"
+    },
+    "upstream/collector/filesystem_common.go": {
+      "mode": "100644",
+      "blob": "1cd4f3dc71bbd62ae8097a42f92aa2c632e095e7"
+    },
+    "upstream/collector/filesystem_freebsd.go": {
+      "mode": "100644",
+      "blob": "cbc99d9f02ca4f095391f3ffed60d7d41cdfd794"
+    },
+    "upstream/collector/filesystem_linux.go": {
+      "mode": "100644",
+      "blob": "038ff7970bff7a22ec3243b6d7d8d945e8484ee2"
+    },
+    "upstream/collector/filesystem_linux_test.go": {
+      "mode": "100644",
+      "blob": "9e8869016abbdda8ec0c351638f1c8112b67f322"
+    },
+    "upstream/collector/filesystem_macos.go": {
+      "mode": "100644",
+      "blob": "be0a49062f6c602f3d13a8b7ef3357f85de22eaf"
+    },
+    "upstream/collector/filesystem_netbsd.go": {
+      "mode": "100644",
+      "blob": "21f73abba18643dcf7396c4f9fa6e6a2f11c0a1d"
+    },
+    "upstream/collector/filesystem_openbsd.go": {
+      "mode": "100644",
+      "blob": "3ca929d845b0abaccf5255baab41037824704a20"
+    },
+    "upstream/collector/fixtures/e2e-64k-page-output.txt": {
+      "mode": "100644",
+      "blob": "7b8e4be5e45bef4667ca40d125e66a8031dbbc5a"
+    },
+    "upstream/collector/fixtures/e2e-output-darwin.txt": {
+      "mode": "100644",
+      "blob": "cf29fb473c6e280e5d2fbd25e4594c5ec88f16fc"
+    },
+    "upstream/collector/fixtures/e2e-output-dragonfly.txt": {
+      "mode": "100644",
+      "blob": "638d0afcaceff83ff9c36d9b6f5f83a6252bc8f9"
+    },
+    "upstream/collector/fixtures/e2e-output-freebsd.txt": {
+      "mode": "100644",
+      "blob": "cfa355a8ad726f1bed8a1d95b1c36e23bd410bb5"
+    },
+    "upstream/collector/fixtures/e2e-output-netbsd.txt": {
+      "mode": "100644",
+      "blob": "2419e8578d4d9fd810e4f5f969a44f9957d09c46"
+    },
+    "upstream/collector/fixtures/e2e-output-openbsd.txt": {
+      "mode": "100644",
+      "blob": "d2ac0881612dfa1b86cdc5978713fc5d34a56318"
+    },
+    "upstream/collector/fixtures/e2e-output-solaris.txt": {
+      "mode": "100644",
+      "blob": "2f0f1d47ba897746d751703bd4cd2f96ffc8b463"
+    },
+    "upstream/collector/fixtures/e2e-output.txt": {
+      "mode": "100644",
+      "blob": "2e2a42b0e5ae37ec394f6101901a3b1790a635c9"
+    },
+    "upstream/collector/fixtures/ethtool/bond0/statistics": {
+      "mode": "100644",
+      "blob": "42e4a141d6c42097b55f5d538935cf87f9fc6dcd"
+    },
+    "upstream/collector/fixtures/ethtool/eth0/driver": {
+      "mode": "100644",
+      "blob": "7ec84a81ed0963d26e3cd3e80579fbfa4edbdead"
+    },
+    "upstream/collector/fixtures/ethtool/eth0/settings": {
+      "mode": "100644",
+      "blob": "47989a816e7893a7b728ff45dcd1c26f12987cfe"
+    },
+    "upstream/collector/fixtures/ethtool/eth0/statistics": {
+      "mode": "100644",
+      "blob": "81e511e7ec311be43227076712f8db5d9d01a564"
+    },
+    "upstream/collector/fixtures/ip_vs_result.txt": {
+      "mode": "100644",
+      "blob": "2d141bae64299e9b25bd64539039f7037d7a12d2"
+    },
+    "upstream/collector/fixtures/ip_vs_result_lbs_local_address_local_port.txt": {
+      "mode": "100644",
+      "blob": "61c77c7e39747a4f44c93fcc06ced3f8f429ee89"
+    },
+    "upstream/collector/fixtures/ip_vs_result_lbs_local_port.txt": {
+      "mode": "100644",
+      "blob": "ef931ffbecc87569164440538b3b75be0d6ac3f8"
+    },
+    "upstream/collector/fixtures/ip_vs_result_lbs_none.txt": {
+      "mode": "100644",
+      "blob": "621aa54776254eea473e11689289a348235896c9"
+    },
+    "upstream/collector/fixtures/pci.ids": {
+      "mode": "100644",
+      "blob": "a25e65325d6208e9efaf44410ee30e3c47b023cc"
+    },
+    "upstream/collector/fixtures/pcidevice-names-output.txt": {
+      "mode": "100644",
+      "blob": "674404f4b8a2a1a5d7d803adcaabe78f4e438290"
+    },
+    "upstream/collector/fixtures/proc/1/mountinfo": {
+      "mode": "100644",
+      "blob": "2a7deda8c8be054eeb6127a42cdcea98ae2c566e"
+    },
+    "upstream/collector/fixtures/proc/1/stat": {
+      "mode": "100644",
+      "blob": "b6bc64d6835ac6a4181be7178d4e568c268fc4ae"
+    },
+    "upstream/collector/fixtures/proc/10/mountinfo": {
+      "mode": "100644",
+      "blob": "74a316f3523bcb5e8bc3a07547a4f1e39e1f5ec5"
+    },
+    "upstream/collector/fixtures/proc/10/mountstats": {
+      "mode": "100644",
+      "blob": "f90f237c1cb1d550448f618af2d27f551d9eaf95"
+    },
+    "upstream/collector/fixtures/proc/10/stat": {
+      "mode": "100644",
+      "blob": "1451c8a44e904e1e217bdcda1c28e895be6b52a7"
+    },
+    "upstream/collector/fixtures/proc/11/.missing_stat": {
+      "mode": "100644",
+      "blob": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391"
+    },
+    "upstream/collector/fixtures/proc/11/stat": {
+      "mode": "100644",
+      "blob": "1d91e2c19a26a0ff834551bb274b19d2b9c4ee31"
+    },
+    "upstream/collector/fixtures/proc/buddyinfo": {
+      "mode": "100644",
+      "blob": "f90594a81becdb163ca9978f87dd7354118b648e"
+    },
+    "upstream/collector/fixtures/proc/cgroups": {
+      "mode": "100644",
+      "blob": "99382e312e2ed3f545dda6b26313e4cf4f4972f7"
+    },
+    "upstream/collector/fixtures/proc/cpuinfo": {
+      "mode": "100644",
+      "blob": "f297405ae928e64df0eb5991c65b84f93ff8ca59"
+    },
+    "upstream/collector/fixtures/proc/diskstats": {
+      "mode": "100644",
+      "blob": "0fb024e53719ae39ff08412f5aea920fe051b086"
+    },
+    "upstream/collector/fixtures/proc/drbd": {
+      "mode": "100644",
+      "blob": "77d16440ab486f5e566a1465b359afdfbb37ea5c"
+    },
+    "upstream/collector/fixtures/proc/interrupts": {
+      "mode": "100644",
+      "blob": "300217c7774f614455dbae13f0e9aca116e83bb9"
+    },
+    "upstream/collector/fixtures/proc/interrupts_aarch64": {
+      "mode": "100644",
+      "blob": "88f2dea7e288433333fce710133562b436550797"
+    },
+    "upstream/collector/fixtures/proc/loadavg": {
+      "mode": "100644",
+      "blob": "8897b7ceb5772cb06e2298c151b333f919c4fa56"
+    },
+    "upstream/collector/fixtures/proc/mdstat": {
+      "mode": "100644",
+      "blob": "a19bf5e3f0442e11938ee3fd0c3d66a9850b1be2"
+    },
+    "upstream/collector/fixtures/proc/meminfo": {
+      "mode": "100644",
+      "blob": "9e97d448f0ceb5854ffd9883cb37d25da2cf459c"
+    },
+    "upstream/collector/fixtures/proc/net/arp": {
+      "mode": "100644",
+      "blob": "3b9e4e76617a0e5524fe9f82b6c45e29dbddcd5a"
+    },
+    "upstream/collector/fixtures/proc/net/ip_vs": {
+      "mode": "100644",
+      "blob": "e7c56a72940e753c616c04abc06c1df868ce422d"
+    },
+    "upstream/collector/fixtures/proc/net/ip_vs_stats": {
+      "mode": "100644",
+      "blob": "c00724e0f0c08757ee1bd4b389492dfa6c7e35eb"
+    },
+    "upstream/collector/fixtures/proc/net/netstat": {
+      "mode": "100644",
+      "blob": "a504f800cc2bc8a777df14cb7d1948d99b483ca6"
+    },
+    "upstream/collector/fixtures/proc/net/rpc/nfs": {
+      "mode": "100644",
+      "blob": "9f330abaa47fcc083a17a6880859e85506349958"
+    },
+    "upstream/collector/fixtures/proc/net/rpc/nfsd": {
+      "mode": "100644",
+      "blob": "6a092bfd3042e29e8b8df45f40dbb3693f759a49"
+    },
+    "upstream/collector/fixtures/proc/net/snmp": {
+      "mode": "100644",
+      "blob": "271073a642fb481ccb592daf9999777f0308b6bc"
+    },
+    "upstream/collector/fixtures/proc/net/snmp6": {
+      "mode": "100644",
+      "blob": "3640bb1b4f8e40985d0fbf3045d61de9c4f8db40"
+    },
+    "upstream/collector/fixtures/proc/net/sockstat": {
+      "mode": "100644",
+      "blob": "97ea5d1a61873068899271547b7b6e7c4375e738"
+    },
+    "upstream/collector/fixtures/proc/net/sockstat6": {
+      "mode": "100644",
+      "blob": "de5806d8d14e9f598d851fc3c0ef2e30653f7a72"
+    },
+    "upstream/collector/fixtures/proc/net/softnet_stat": {
+      "mode": "100644",
+      "blob": "d5a5a20b7b6dbc820f5667f617bea792d74cc53c"
+    },
+    "upstream/collector/fixtures/proc/net/stat/arp_cache": {
+      "mode": "100644",
+      "blob": "3176ca6134fa58b5cb466f0711067b29bfec307a"
+    },
+    "upstream/collector/fixtures/proc/net/stat/ndisc_cache": {
+      "mode": "100644",
+      "blob": "fd4c2f8f49794632becb521748cfab1769feecd0"
+    },
+    "upstream/collector/fixtures/proc/net/stat/nf_conntrack": {
+      "mode": "100644",
+      "blob": "c833c40e46fe2517dcd813037bb6ab442b1be75d"
+    },
+    "upstream/collector/fixtures/proc/net/udp": {
+      "mode": "100644",
+      "blob": "3c5052400a9757e26ac669dae4c71fab61fcd600"
+    },
+    "upstream/collector/fixtures/proc/net/xfrm_stat": {
+      "mode": "100644",
+      "blob": "970c3e4ded49c834da1aec87ab6d8de4382f6a97"
+    },
+    "upstream/collector/fixtures/proc/pressure/cpu": {
+      "mode": "100644",
+      "blob": "0aaced93da1d2531fbd9e28606af885113eaa855"
+    },
+    "upstream/collector/fixtures/proc/pressure/io": {
+      "mode": "100644",
+      "blob": "4cdc413548c63259d4c4e6df381625869651b639"
+    },
+    "upstream/collector/fixtures/proc/pressure/irq": {
+      "mode": "100644",
+      "blob": "76059c7572c944f734560bdd4d16fb0f20fcbc73"
+    },
+    "upstream/collector/fixtures/proc/pressure/memory": {
+      "mode": "100644",
+      "blob": "30c03cc4048beed7f9c06cb8ea34414801864162"
+    },
+    "upstream/collector/fixtures/proc/schedstat": {
+      "mode": "100644",
+      "blob": "5a555c00fec8ccaa03f37aedfc84057c2a5e7e99"
+    },
+    "upstream/collector/fixtures/proc/self": {
+      "mode": "120000",
+      "blob": "9a037142aa3c1b4c490e1a38251620f113465330"
+    },
+    "upstream/collector/fixtures/proc/slabinfo": {
+      "mode": "100644",
+      "blob": "8f2de4ba11b426e0cc39c29004b5b018e969f0ff"
+    },
+    "upstream/collector/fixtures/proc/softirqs": {
+      "mode": "100644",
+      "blob": "a1dfef5ffec3d9e1cdb4656e0209b81c69475940"
+    },
+    "upstream/collector/fixtures/proc/spl/kstat/zfs/abdstats": {
+      "mode": "100644",
+      "blob": "56e169db4dff5f5e8174ef212113c59460b7cb42"
+    },
+    "upstream/collector/fixtures/proc/spl/kstat/zfs/arcstats": {
+      "mode": "100644",
+      "blob": "1dbeed6f3774f5fce7c6600ddf0b37a353047160"
+    },
+    "upstream/collector/fixtures/proc/spl/kstat/zfs/dbufstats": {
+      "mode": "100644",
+      "blob": "d627eacd0805c79b10038a79e99b676474b05fc9"
+    },
+    "upstream/collector/fixtures/proc/spl/kstat/zfs/dmu_tx": {
+      "mode": "100644",
+      "blob": "de16fce4378ef6c6310db4119f0c2f7ee1b427ed"
+    },
+    "upstream/collector/fixtures/proc/spl/kstat/zfs/dnodestats": {
+      "mode": "100644",
+      "blob": "36730fbcf697720a021be5352f99691979a495a2"
+    },
+    "upstream/collector/fixtures/proc/spl/kstat/zfs/fm": {
+      "mode": "100644",
+      "blob": "c355c0e3925f052a3e37cb03ecedee8bccdd9295"
+    },
+    "upstream/collector/fixtures/proc/spl/kstat/zfs/pool1/io": {
+      "mode": "100644",
+      "blob": "ef2a58fe7f825a65daae9ac3f36d0d0db32f8ea7"
+    },
+    "upstream/collector/fixtures/proc/spl/kstat/zfs/pool1/objset-1": {
+      "mode": "100644",
+      "blob": "28a9d2e3ce48b9a0c91b80779b38a4d87e72b29d"
+    },
+    "upstream/collector/fixtures/proc/spl/kstat/zfs/pool1/objset-2": {
+      "mode": "100644",
+      "blob": "79ee31d2897af7b3d6eef997db1741f0b9f4c581"
+    },
+    "upstream/collector/fixtures/proc/spl/kstat/zfs/pool1/state": {
+      "mode": "100644",
+      "blob": "1424865cf5eac7ccd4ed58eb52a5db4983945563"
+    },
+    "upstream/collector/fixtures/proc/spl/kstat/zfs/pool2/state": {
+      "mode": "100644",
+      "blob": "c3ddd0e6610898f39a6d4713754a38e8ea389d28"
+    },
+    "upstream/collector/fixtures/proc/spl/kstat/zfs/pool3/io": {
+      "mode": "100644",
+      "blob": "ef2a58fe7f825a65daae9ac3f36d0d0db32f8ea7"
+    },
+    "upstream/collector/fixtures/proc/spl/kstat/zfs/pool3/objset-1": {
+      "mode": "100644",
+      "blob": "9799d262a75c085c6c17b7bb6c6ce19a35167cdb"
+    },
+    "upstream/collector/fixtures/proc/spl/kstat/zfs/pool3/objset-2": {
+      "mode": "100644",
+      "blob": "e395504b3a9580227e29dbae4f86684ae5dc647f"
+    },
+    "upstream/collector/fixtures/proc/spl/kstat/zfs/pool3/state": {
+      "mode": "100644",
+      "blob": "1424865cf5eac7ccd4ed58eb52a5db4983945563"
+    },
+    "upstream/collector/fixtures/proc/spl/kstat/zfs/poolz1/io": {
+      "mode": "100644",
+      "blob": "2e6677c51fda975f1df13a985071c8d15679aab4"
+    },
+    "upstream/collector/fixtures/proc/spl/kstat/zfs/poolz1/objset-1": {
+      "mode": "100644",
+      "blob": "189b65550bd4943cd5728edce9547552611b9790"
+    },
+    "upstream/collector/fixtures/proc/spl/kstat/zfs/poolz1/objset-2": {
+      "mode": "100644",
+      "blob": "3d446235a95da6e10ba1724b45675e2c3b64f4d3"
+    },
+    "upstream/collector/fixtures/proc/spl/kstat/zfs/poolz1/state": {
+      "mode": "100644",
+      "blob": "be5b2ef03f6f9ce2fb0d1f7237901597701b7c82"
+    },
+    "upstream/collector/fixtures/proc/spl/kstat/zfs/vdev_cache_stats": {
+      "mode": "100644",
+      "blob": "4a1acc051bffbe43b7d5519d57df5e6af482fdd8"
+    },
+    "upstream/collector/fixtures/proc/spl/kstat/zfs/vdev_mirror_stats": {
+      "mode": "100644",
+      "blob": "7e4be9bd673c99288966ba8548702970856cb31c"
+    },
+    "upstream/collector/fixtures/proc/spl/kstat/zfs/xuio_stats": {
+      "mode": "100644",
+      "blob": "87dd7d875179b3028b085155341920d2b26778b1"
+    },
+    "upstream/collector/fixtures/proc/spl/kstat/zfs/zfetchstats": {
+      "mode": "100644",
+      "blob": "73515844c45e36880f05f18206ad5a2ee26e6d7d"
+    },
+    "upstream/collector/fixtures/proc/spl/kstat/zfs/zil": {
+      "mode": "100644",
+      "blob": "61e95d719ebff9cb3b31fa5e44fd443fda13a1a1"
+    },
+    "upstream/collector/fixtures/proc/stat": {
+      "mode": "100644",
+      "blob": "96346503b95b87929c105691d81916890198d264"
+    },
+    "upstream/collector/fixtures/proc/swaps": {
+      "mode": "100644",
+      "blob": "c0fbf7787b381d4e7097cd5a4dfe7b164a632767"
+    },
+    "upstream/collector/fixtures/proc/sys/fs/file-nr": {
+      "mode": "100644",
+      "blob": "d5a4f8749a0748fa07fc0de092e1480f91df1f87"
+    },
+    "upstream/collector/fixtures/proc/sys/kernel/hung_task_detect_count": {
+      "mode": "100644",
+      "blob": "d81cc0710eb6cf9efd5b920a8453e1e07157b6cd"
+    },
+    "upstream/collector/fixtures/proc/sys/kernel/pid_max": {
+      "mode": "100644",
+      "blob": "190a18037c64c43e6b11489df4bf0b9eb6d2c9bf"
+    },
+    "upstream/collector/fixtures/proc/sys/kernel/random/entropy_avail": {
+      "mode": "100644",
+      "blob": "a369ea6071bfc0350a0ee225abea591c3c7ca5f9"
+    },
+    "upstream/collector/fixtures/proc/sys/kernel/random/poolsize": {
+      "mode": "100644",
+      "blob": "801c306ed34deec16ff7c06d8ab9480fc07af671"
+    },
+    "upstream/collector/fixtures/proc/sys/kernel/seccomp/actions_avail": {
+      "mode": "100644",
+      "blob": "a608f9fd0765efea044b67396f2439ee087fd2e3"
+    },
+    "upstream/collector/fixtures/proc/sys/kernel/threads-max": {
+      "mode": "100644",
+      "blob": "0ccbf457ebd7e09fe367ee9c0b4407f5007af556"
+    },
+    "upstream/collector/fixtures/proc/sys/net/netfilter/nf_conntrack_count": {
+      "mode": "100644",
+      "blob": "190a18037c64c43e6b11489df4bf0b9eb6d2c9bf"
+    },
+    "upstream/collector/fixtures/proc/sys/net/netfilter/nf_conntrack_max": {
+      "mode": "100644",
+      "blob": "e2ed8f4daf20620dc3a20e84f5067557e369aed4"
+    },
+    "upstream/collector/fixtures/proc/sys/pid_max": {
+      "mode": "100644",
+      "blob": "190a18037c64c43e6b11489df4bf0b9eb6d2c9bf"
+    },
+    "upstream/collector/fixtures/proc/sys/threads-max": {
+      "mode": "100644",
+      "blob": "0ccbf457ebd7e09fe367ee9c0b4407f5007af556"
+    },
+    "upstream/collector/fixtures/proc/vmstat": {
+      "mode": "100644",
+      "blob": "d431eb45562be148335d4752d48fa464ea902bd1"
+    },
+    "upstream/collector/fixtures/proc/zoneinfo": {
+      "mode": "100644",
+      "blob": "82ff3d6315b529e461baa0f12e9fb1fc4488bb42"
+    },
+    "upstream/collector/fixtures/qdisc/results.json": {
+      "mode": "100644",
+      "blob": "fe282bdd3d1d5bfb7daa93d8876f4e49a1e29d4f"
+    },
+    "upstream/collector/fixtures/sys.ttar": {
+      "mode": "100644",
+      "blob": "06f38954f944a1db061369aa16dbfd1818a7ebb7"
+    },
+    "upstream/collector/fixtures/textfile/client_side_timestamp.out": {
+      "mode": "100644",
+      "blob": "75ad6924b76ab09dd6dcf72d579737dda914d324"
+    },
+    "upstream/collector/fixtures/textfile/client_side_timestamp/metrics.prom": {
+      "mode": "100644",
+      "blob": "fe3199bca1a49f27724bd0d7118636fa7574fec6"
+    },
+    "upstream/collector/fixtures/textfile/different_metric_types.out": {
+      "mode": "100644",
+      "blob": "c01c197cce4e9954c146f2409ab3ac39e0767935"
+    },
+    "upstream/collector/fixtures/textfile/different_metric_types/metrics.prom": {
+      "mode": "100644",
+      "blob": "3ba8a65a57c2fe64002960cf7e93f87f080a4c18"
+    },
+    "upstream/collector/fixtures/textfile/glob_extra_dimension.out": {
+      "mode": "100644",
+      "blob": "bbf7f454131bc72cab96fa6e4ba70e83aad693ed"
+    },
+    "upstream/collector/fixtures/textfile/histogram.out": {
+      "mode": "100644",
+      "blob": "f649e19a2f8fe5025cf3db64aad4bdfcd158e6d8"
+    },
+    "upstream/collector/fixtures/textfile/histogram/metrics.prom": {
+      "mode": "100644",
+      "blob": "ac8377a2afea5feebccbdc26b5cb6ac68c2fcde1"
+    },
+    "upstream/collector/fixtures/textfile/histogram_extra_dimension.out": {
+      "mode": "100644",
+      "blob": "2f6aa854adb961bbe9c941ea2c349774fb304ebb"
+    },
+    "upstream/collector/fixtures/textfile/histogram_extra_dimension/metrics.prom": {
+      "mode": "100644",
+      "blob": "55bb81e0972c6abc1f16c932da2b4959300d1af2"
+    },
+    "upstream/collector/fixtures/textfile/inconsistent_metrics.out": {
+      "mode": "100644",
+      "blob": "45ad4535e6a7350a659b2c628c2d7720285b5364"
+    },
+    "upstream/collector/fixtures/textfile/inconsistent_metrics/metrics.prom": {
+      "mode": "100644",
+      "blob": "dfbdd629080ab9e2967f55589c6474ce460a2f1e"
+    },
+    "upstream/collector/fixtures/textfile/metrics_merge_different_help.out": {
+      "mode": "100644",
+      "blob": "b9385a752ab4b82a4e36903d684ea6528f7288f4"
+    },
+    "upstream/collector/fixtures/textfile/metrics_merge_different_help/a.prom": {
+      "mode": "100644",
+      "blob": "9188bbdeec56543168f366729be308fcfbc589ce"
+    },
+    "upstream/collector/fixtures/textfile/metrics_merge_different_help/b.prom": {
+      "mode": "100644",
+      "blob": "259d43d0a519b26e039b70e5c395cd1a233d47a4"
+    },
+    "upstream/collector/fixtures/textfile/metrics_merge_empty_help.out": {
+      "mode": "100644",
+      "blob": "2abe2cea9f0ee939d3ed147ae5ae66784a4a453b"
+    },
+    "upstream/collector/fixtures/textfile/metrics_merge_empty_help/a.prom": {
+      "mode": "100644",
+      "blob": "3036448d0c838def6cc959ded5e01b0f28836f8e"
+    },
+    "upstream/collector/fixtures/textfile/metrics_merge_empty_help/b.prom": {
+      "mode": "100644",
+      "blob": "efe9505a9abf07d5f47dfc9112c6b351040c8d2b"
+    },
+    "upstream/collector/fixtures/textfile/metrics_merge_no_help.out": {
+      "mode": "100644",
+      "blob": "268e3c4806742b04d62f0b9869940e6288907f18"
+    },
+    "upstream/collector/fixtures/textfile/metrics_merge_no_help/a.prom": {
+      "mode": "100644",
+      "blob": "e11c618bf0b8fe17f48e5fc170f12c8336552c44"
+    },
+    "upstream/collector/fixtures/textfile/metrics_merge_no_help/b.prom": {
+      "mode": "100644",
+      "blob": "984fbf46a4abf995bc3de1aa2bf11794210ccb2f"
+    },
+    "upstream/collector/fixtures/textfile/metrics_merge_same_help.out": {
+      "mode": "100644",
+      "blob": "5fddae3d770502ae4fd402106457f0ed75978576"
+    },
+    "upstream/collector/fixtures/textfile/metrics_merge_same_help/a.prom": {
+      "mode": "100644",
+      "blob": "a40cd6e6279c7c4eabe236d225bc7bac3c2cf3fb"
+    },
+    "upstream/collector/fixtures/textfile/metrics_merge_same_help/b.prom": {
+      "mode": "100644",
+      "blob": "77728727b43be6eda53cf19b29f2960791ee5dae"
+    },
+    "upstream/collector/fixtures/textfile/no_metric_files.out": {
+      "mode": "100644",
+      "blob": "cf36bd09c39fabc0e2b17f23607c5faed7eeed2b"
+    },
+    "upstream/collector/fixtures/textfile/no_metric_files/non_matching_file.txt": {
+      "mode": "100644",
+      "blob": "cef6c23575aa0c0d3190fd54c1250b166689740f"
+    },
+    "upstream/collector/fixtures/textfile/nonexistent_path.out": {
+      "mode": "100644",
+      "blob": "75ad6924b76ab09dd6dcf72d579737dda914d324"
+    },
+    "upstream/collector/fixtures/textfile/summary.out": {
+      "mode": "100644",
+      "blob": "c83dba97f35145ed0036bc8c8abff37875c34ff3"
+    },
+    "upstream/collector/fixtures/textfile/summary/metrics.prom": {
+      "mode": "100644",
+      "blob": "b6cbccbac3aed45a5013ee45664d7017e2b4d76d"
+    },
+    "upstream/collector/fixtures/textfile/summary_extra_dimension.out": {
+      "mode": "100644",
+      "blob": "d49e8a1d2fc6ee4cd81ff91d4f39cded62f439e9"
+    },
+    "upstream/collector/fixtures/textfile/summary_extra_dimension/metrics.prom": {
+      "mode": "100644",
+      "blob": "33ab859507d156507dff44926ca28ef665c2217a"
+    },
+    "upstream/collector/fixtures/textfile/two_metric_files.out": {
+      "mode": "100644",
+      "blob": "fbff74dd5fd4abdc931ec5f29a08861c7c3d95e1"
+    },
+    "upstream/collector/fixtures/textfile/two_metric_files/metrics1.prom": {
+      "mode": "100644",
+      "blob": "ef24095759841f1c715eb629c00ea8daf28c79a0"
+    },
+    "upstream/collector/fixtures/textfile/two_metric_files/metrics2.prom": {
+      "mode": "100644",
+      "blob": "81234f932956785060c19605c6c8acbf9c27d7a2"
+    },
+    "upstream/collector/fixtures/textfile/two_metric_files/non_matching_file.txt": {
+      "mode": "100644",
+      "blob": "cef6c23575aa0c0d3190fd54c1250b166689740f"
+    },
+    "upstream/collector/fixtures/udev.ttar": {
+      "mode": "100644",
+      "blob": "f4db1d901cf6793ff1ef440f6998129275042db8"
+    },
+    "upstream/collector/fixtures/usr/lib/os-release": {
+      "mode": "100644",
+      "blob": "f228f2226448b426433d1599c196c57c8a488bbc"
+    },
+    "upstream/collector/fixtures/wifi/interfaces.json": {
+      "mode": "100644",
+      "blob": "21b3164f0d0fd6c077d104034087e402f341e575"
+    },
+    "upstream/collector/fixtures/wifi/wlan0/bss.json": {
+      "mode": "100644",
+      "blob": "f9dd4778c268f211ab2866c633ea016398bb45bb"
+    },
+    "upstream/collector/fixtures/wifi/wlan0/stationinfo.json": {
+      "mode": "100644",
+      "blob": "8bb0f35ce5d0867a6f62c815f8aa654051f78c7c"
+    },
+    "upstream/collector/fixtures_bindmount/proc/1/mountinfo": {
+      "mode": "100644",
+      "blob": "e4f1bcc549c740d70c0d6f9c068de8faa1966a36"
+    },
+    "upstream/collector/fixtures_hidepid/proc/self/mountinfo": {
+      "mode": "100644",
+      "blob": "dde22f67af92086b2f7a300d6795ea1fc968ed4d"
+    },
+    "upstream/collector/helper.go": {
+      "mode": "100644",
+      "blob": "21dddf887c896248d100704446af0cee95fd0160"
+    },
+    "upstream/collector/helper_linux.go": {
+      "mode": "100644",
+      "blob": "36cf97802368925af446e97580dd6c4037e394f7"
+    },
+    "upstream/collector/helper_test.go": {
+      "mode": "100644",
+      "blob": "9c1296edda22fecd10ac4b9f0e6d7238ff0c0f58"
+    },
+    "upstream/collector/hwmon_linux.go": {
+      "mode": "100644",
+      "blob": "5d9d4b72258416fbd621014b3b7ceb81525fac10"
+    },
+    "upstream/collector/hwmon_linux_test.go": {
+      "mode": "100644",
+      "blob": "3206b0e09da6f33568599bd3252e9a4aa63ae859"
+    },
+    "upstream/collector/infiniband_linux.go": {
+      "mode": "100644",
+      "blob": "fb83c152a6c96e0bf86043f65e53334ce3c02a4c"
+    },
+    "upstream/collector/interrupts_common.go": {
+      "mode": "100644",
+      "blob": "4e4bad6ff11f713deea8eb5304fece8d9b2fe8af"
+    },
+    "upstream/collector/interrupts_linux.go": {
+      "mode": "100644",
+      "blob": "d70b0e042f6062ef581cb4b4ecd2af1d1da85640"
+    },
+    "upstream/collector/interrupts_linux_test.go": {
+      "mode": "100644",
+      "blob": "d920916524a1c2184803c1996cacb0bb395b7972"
+    },
+    "upstream/collector/interrupts_openbsd.go": {
+      "mode": "100644",
+      "blob": "b9ab0d906d152739517ef5d3dddd842bb8356e38"
+    },
+    "upstream/collector/interrupts_openbsd_amd64.go": {
+      "mode": "100644",
+      "blob": "fae7905d60dcf50a2922265b43ce967ea97df096"
+    },
+    "upstream/collector/ipvs_linux.go": {
+      "mode": "100644",
+      "blob": "2ad30e07e9723f032d1fc08b474225b8170d370a"
+    },
+    "upstream/collector/ipvs_linux_test.go": {
+      "mode": "100644",
+      "blob": "b6870d8052798d9d9de42ad2e6f67d30109c74ac"
+    },
+    "upstream/collector/kernel_hung_linux.go": {
+      "mode": "100644",
+      "blob": "d77c504b6c3131f26cef3f14fe6439414571f841"
+    },
+    "upstream/collector/ksmd_linux.go": {
+      "mode": "100644",
+      "blob": "f400f0a0fc5858a68f46eb74a15530dc97a72cfd"
+    },
+    "upstream/collector/kvm_bsd.c": {
+      "mode": "100644",
+      "blob": "ad86d33e3a22b905573b05fd7e9b739e4c5a2997"
+    },
+    "upstream/collector/kvm_bsd.go": {
+      "mode": "100644",
+      "blob": "feee6cc8332272475fb4c03ae3bd96027f3f5a84"
+    },
+    "upstream/collector/kvm_bsd.h": {
+      "mode": "100644",
+      "blob": "0cfbfa702ed0b0344b3b227a30aedea2b4112299"
+    },
+    "upstream/collector/lnstat_linux.go": {
+      "mode": "100644",
+      "blob": "232e5ce4e1fc71763e55b5e44acbd16cdb75b78d"
+    },
+    "upstream/collector/loadavg.go": {
+      "mode": "100644",
+      "blob": "48c271d9f594328b4b56566dd676dd4e4ea02c71"
+    },
+    "upstream/collector/loadavg_aix.go": {
+      "mode": "100644",
+      "blob": "8736dca8465b2b94afcd51e6fafa5b5061ad5ba3"
+    },
+    "upstream/collector/loadavg_bsd.go": {
+      "mode": "100644",
+      "blob": "23ab24a9e811e87e9691fc008dc98e0e4d3d5dbb"
+    },
+    "upstream/collector/loadavg_linux.go": {
+      "mode": "100644",
+      "blob": "f0d6c6e727c64341fe30a382856d88523cd8e65c"
+    },
+    "upstream/collector/loadavg_linux_test.go": {
+      "mode": "100644",
+      "blob": "271cc6b42f98af346a2eccc3d2751c37f520ad36"
+    },
+    "upstream/collector/loadavg_solaris.go": {
+      "mode": "100644",
+      "blob": "31b1105ef1a833933bc82d54a1d54c52d8be49f5"
+    },
+    "upstream/collector/logind_linux.go": {
+      "mode": "100644",
+      "blob": "bd2c04848d157eb3352931249a03a9d1c46b1ced"
+    },
+    "upstream/collector/logind_linux_test.go": {
+      "mode": "100644",
+      "blob": "b2592a74e081f54cf86bd7aeaaed76b461f6bd20"
+    },
+    "upstream/collector/mdadm_linux.go": {
+      "mode": "100644",
+      "blob": "433e25c56b54a1a147235e04068c639e3e406ed9"
+    },
+    "upstream/collector/mdadm_linux_test.go": {
+      "mode": "100644",
+      "blob": "6aa216232ebd40bcac8dd493d829cf24a0046f31"
+    },
+    "upstream/collector/meminfo.go": {
+      "mode": "100644",
+      "blob": "cc69fe742fc96348f0703ac5663c618db5b80c16"
+    },
+    "upstream/collector/meminfo_aix.go": {
+      "mode": "100644",
+      "blob": "52e84a1e23e88d8fb113b63c1ed5ff0563a5d79b"
+    },
+    "upstream/collector/meminfo_darwin.go": {
+      "mode": "100644",
+      "blob": "947857f94448eb797c18cd933bab10438a68f397"
+    },
+    "upstream/collector/meminfo_linux.go": {
+      "mode": "100644",
+      "blob": "88c18d76d393b071e60a9dbcd47c3a07d870a83d"
+    },
+    "upstream/collector/meminfo_linux_test.go": {
+      "mode": "100644",
+      "blob": "2ad7d5054172ab4e2f745964f79abe45a1ad5815"
+    },
+    "upstream/collector/meminfo_netbsd.go": {
+      "mode": "100644",
+      "blob": "549cd6a55d58ae76ca57ae4ebb26471088ccf203"
+    },
+    "upstream/collector/meminfo_numa_linux.go": {
+      "mode": "100644",
+      "blob": "cd494928a3a4fb92b7882a48439510c3a18f8e25"
+    },
+    "upstream/collector/meminfo_numa_linux_test.go": {
+      "mode": "100644",
+      "blob": "1d251fcf9f6f7dfe149936c1bfc529b2cb3e936c"
+    },
+    "upstream/collector/meminfo_openbsd.go": {
+      "mode": "100644",
+      "blob": "250905105aa6329f756fe11af1e26bc80207fc67"
+    },
+    "upstream/collector/meminfo_openbsd_amd64.go": {
+      "mode": "100644",
+      "blob": "729507263f4972acc790c461d46083f64fc55511"
+    },
+    "upstream/collector/memory_bsd.go": {
+      "mode": "100644",
+      "blob": "5bec6155d08d33b5bda1f5f3319e5d204647f05f"
+    },
+    "upstream/collector/mountstats_linux.go": {
+      "mode": "100644",
+      "blob": "c71e6e95e1693fd51c2ae03d02de93d1902329cb"
+    },
+    "upstream/collector/mountstats_linux_test.go": {
+      "mode": "100644",
+      "blob": "8e10ab6893135e1a45bc643ad6c4fd6c68416f91"
+    },
+    "upstream/collector/netclass_linux.go": {
+      "mode": "100644",
+      "blob": "4fe40b988159166d30166c8175ee6398c750d924"
+    },
+    "upstream/collector/netclass_rtnl_linux.go": {
+      "mode": "100644",
+      "blob": "c71957cc293504337e5b275b06503cec1209523b"
+    },
+    "upstream/collector/netdev_aix.go": {
+      "mode": "100644",
+      "blob": "6c48600f339b608a527c399439467106038ec8cd"
+    },
+    "upstream/collector/netdev_bsd.go": {
+      "mode": "100644",
+      "blob": "7ec6ad576ba613fa1dc4b9ff213c57efb27076c3"
+    },
+    "upstream/collector/netdev_common.go": {
+      "mode": "100644",
+      "blob": "f37a70851273deb9bdd0c801e237e38cfbd00e42"
+    },
+    "upstream/collector/netdev_darwin.go": {
+      "mode": "100644",
+      "blob": "7b70a0d09ef465334992ea51a7b2c305888e9de5"
+    },
+    "upstream/collector/netdev_linux.go": {
+      "mode": "100644",
+      "blob": "8f694c2c971adffe2344c2bbd793b389249a0b42"
+    },
+    "upstream/collector/netdev_linux_test.go": {
+      "mode": "100644",
+      "blob": "3f0515b3f5dfb0748bb3f8703c61cf284ece310d"
+    },
+    "upstream/collector/netdev_openbsd.go": {
+      "mode": "100644",
+      "blob": "85df6801820c7a3e041bc004450960f940831004"
+    },
+    "upstream/collector/netdev_openbsd_amd64.go": {
+      "mode": "100644",
+      "blob": "62b706d047b1882d015a3e28f2519f683731d786"
+    },
+    "upstream/collector/netinterface_aix.go": {
+      "mode": "100644",
+      "blob": "913963e74f77c1e86e4786f711e0e433eab7362e"
+    },
+    "upstream/collector/netisr_freebsd.go": {
+      "mode": "100644",
+      "blob": "608adbbf9e2777d7e8910543c06600fc3286cc71"
+    },
+    "upstream/collector/netstat_freebsd.go": {
+      "mode": "100644",
+      "blob": "39d6259844c787b4d6cbef4ee83be42337834925"
+    },
+    "upstream/collector/netstat_freebsd_test.go": {
+      "mode": "100644",
+      "blob": "a08f5ab6ec171b087aec4fb92533ad327cb0bd55"
+    },
+    "upstream/collector/netstat_linux.go": {
+      "mode": "100644",
+      "blob": "5065a19af333a513919f4abf4080bf33a6ae6bb2"
+    },
+    "upstream/collector/netstat_linux_test.go": {
+      "mode": "100644",
+      "blob": "a30f44a2c9602300a951705e0c1f29ef65137660"
+    },
+    "upstream/collector/network_route_linux.go": {
+      "mode": "100644",
+      "blob": "075695eebf8beca24936d86baf8cb632cc7aa7c9"
+    },
+    "upstream/collector/nfs_linux.go": {
+      "mode": "100644",
+      "blob": "7815dd06872112900c5bab91336b83b0ef80a232"
+    },
+    "upstream/collector/nfsd_linux.go": {
+      "mode": "100644",
+      "blob": "866be828f7dbb08bee5c4be7eceb560f7e8dff51"
+    },
+    "upstream/collector/ntp.go": {
+      "mode": "100644",
+      "blob": "e1465f54212d7c6831a20ecea98ca04461b8c604"
+    },
+    "upstream/collector/nvme_linux.go": {
+      "mode": "100644",
+      "blob": "dff757c7bd64180e9f8a918cce5efdecdc41f9c5"
+    },
+    "upstream/collector/nvmesubsystem_linux.go": {
+      "mode": "100644",
+      "blob": "eec4fa2abb6060a056aadb2faf7b764c3be14462"
+    },
+    "upstream/collector/nvmesubsystem_linux_test.go": {
+      "mode": "100644",
+      "blob": "3ea92b26f5778cfe4107198f8e11256eb1fe41ea"
+    },
+    "upstream/collector/os_release.go": {
+      "mode": "100644",
+      "blob": "34c1557748a9dfaf225f144fbaf8ea531925c4ba"
+    },
+    "upstream/collector/os_release_test.go": {
+      "mode": "100644",
+      "blob": "e5d6b501f0d5eb99af57100e94e34c8c757df3fc"
+    },
+    "upstream/collector/partition_aix.go": {
+      "mode": "100644",
+      "blob": "a6d9494148120716bd40baf320f798f05ee6db76"
+    },
+    "upstream/collector/paths.go": {
+      "mode": "100644",
+      "blob": "82c941876d78323806e83fbd938789d8701bf51d"
+    },
+    "upstream/collector/paths_test.go": {
+      "mode": "100644",
+      "blob": "9426fa4b8a7f37724afd40c489d98928cf8280ed"
+    },
+    "upstream/collector/pcidevice_linux.go": {
+      "mode": "100644",
+      "blob": "0d1baab2f58ffdc4bb9e9757ac2c6639bf2f8487"
+    },
+    "upstream/collector/pcidevice_linux_test.go": {
+      "mode": "100644",
+      "blob": "b8b9d4c4fe959ff7c2fa20eed01592d7ae13e29e"
+    },
+    "upstream/collector/perf_linux.go": {
+      "mode": "100644",
+      "blob": "a7f95507bd0d6fbd5c9e865aa2752d70b36bc42a"
+    },
+    "upstream/collector/perf_linux_test.go": {
+      "mode": "100644",
+      "blob": "3176e7d2fb203cff7b35aed4654757e976134d56"
+    },
+    "upstream/collector/powersupplyclass.go": {
+      "mode": "100644",
+      "blob": "33142617f34d590dd321d228708d4e8f1c47b6d6"
+    },
+    "upstream/collector/powersupplyclass_darwin.go": {
+      "mode": "100644",
+      "blob": "be3d778ce57a7a961ea5f4d46c1c95ff99db158c"
+    },
+    "upstream/collector/powersupplyclass_linux.go": {
+      "mode": "100644",
+      "blob": "b4fbf3510a8c2311a89a63e94fbcef370be07187"
+    },
+    "upstream/collector/pressure_linux.go": {
+      "mode": "100644",
+      "blob": "659c4b376883cb2fcc6f995e847c6afe90c3a86d"
+    },
+    "upstream/collector/processes_linux.go": {
+      "mode": "100644",
+      "blob": "eff5cf06b5ed4ef217a98093f733103a239fa472"
+    },
+    "upstream/collector/processes_linux_test.go": {
+      "mode": "100644",
+      "blob": "4b20ef8d63e512a6e84e809493eded732c8924f6"
+    },
+    "upstream/collector/qdisc_linux.go": {
+      "mode": "100644",
+      "blob": "9062da122ce817cee352b34848bb660dddbbb573"
+    },
+    "upstream/collector/rapl_linux.go": {
+      "mode": "100644",
+      "blob": "92c402d53947c336b544b99f3615d2b400860ca2"
+    },
+    "upstream/collector/runit.go": {
+      "mode": "100644",
+      "blob": "9fabd3ffc5a53abaa1bf22753e0bb959f1ca8f91"
+    },
+    "upstream/collector/schedstat_linux.go": {
+      "mode": "100644",
+      "blob": "14882bdab8cb247917e8079c7cb5cce5a8af7205"
+    },
+    "upstream/collector/selinux_linux.go": {
+      "mode": "100644",
+      "blob": "b0e7fac6e69fa661b908f82ed0333218ece6412a"
+    },
+    "upstream/collector/slabinfo_linux.go": {
+      "mode": "100644",
+      "blob": "48bbf2abfe54cb244c0e7afaac3b3a3168be8478"
+    },
+    "upstream/collector/sockstat_linux.go": {
+      "mode": "100644",
+      "blob": "0ec782bcd13b07c9eef304b80a4f27f8a4fbb6fa"
+    },
+    "upstream/collector/softirqs_common.go": {
+      "mode": "100644",
+      "blob": "2022a4b5b7cb81b81a554e04cf9fa1b9aab903ea"
+    },
+    "upstream/collector/softirqs_linux.go": {
+      "mode": "100644",
+      "blob": "0c64751049033adfff21205dac25b5d332797b0f"
+    },
+    "upstream/collector/softnet_linux.go": {
+      "mode": "100644",
+      "blob": "2644bbf9a471cb9c848e86331dd302c7c4f1268f"
+    },
+    "upstream/collector/stat_linux.go": {
+      "mode": "100644",
+      "blob": "e7efeef0b88da231b5baa61ba4898d320461c34d"
+    },
+    "upstream/collector/supervisord.go": {
+      "mode": "100644",
+      "blob": "b3c4c3f68f26be9058a62fa37447e5874778bf7c"
+    },
+    "upstream/collector/swap_linux.go": {
+      "mode": "100644",
+      "blob": "9a275e16142fd8ed426099e1af4ab15b935f19db"
+    },
+    "upstream/collector/swap_linux_test.go": {
+      "mode": "100644",
+      "blob": "f4e49c505048ab7e09bd0eb914c6fa4a7c9bd408"
+    },
+    "upstream/collector/sysctl_bsd.go": {
+      "mode": "100644",
+      "blob": "e3c8dc5cf4f7d9ef740f0023d8de7646b35aef9b"
+    },
+    "upstream/collector/sysctl_linux.go": {
+      "mode": "100644",
+      "blob": "0915b4e6f7633beaf1d194dae26289038e9ee547"
+    },
+    "upstream/collector/sysctl_openbsd_amd64.go": {
+      "mode": "100644",
+      "blob": "2b2988934ea2d321e799fdcd3d55459b4e449fe3"
+    },
+    "upstream/collector/systemd_linux.go": {
+      "mode": "100644",
+      "blob": "0464f23d2bad81d4efe508f96731cec462a7b0cc"
+    },
+    "upstream/collector/systemd_linux_test.go": {
+      "mode": "100644",
+      "blob": "98668ed6be7e40ce6d341fccc4426ede10e11e38"
+    },
+    "upstream/collector/tapestats_linux.go": {
+      "mode": "100644",
+      "blob": "e195ce1c51d1ac4881ec8fac9ff4299be025e0f9"
+    },
+    "upstream/collector/tcpstat_linux.go": {
+      "mode": "100644",
+      "blob": "555e46e91f65d51dd6204262b571a5893c8e2528"
+    },
+    "upstream/collector/tcpstat_linux_test.go": {
+      "mode": "100644",
+      "blob": "8a56af9ccd892dbb41b13dfc4b4927497092e2ff"
+    },
+    "upstream/collector/textfile.go": {
+      "mode": "100644",
+      "blob": "6629eb9d8ebea705fa8a2c74072a00ba5929149e"
+    },
+    "upstream/collector/textfile_test.go": {
+      "mode": "100644",
+      "blob": "222ffa8feec17ec9de749695dbfe3ca076602f0a"
+    },
+    "upstream/collector/thermal_darwin.go": {
+      "mode": "100644",
+      "blob": "c55b9b2845bd8d417a87d318d983bd5be65fcb91"
+    },
+    "upstream/collector/thermal_darwin_amd64.go": {
+      "mode": "100644",
+      "blob": "e49b65d2a3a76b5558cc9888019a04956d5fe6e5"
+    },
+    "upstream/collector/thermal_darwin_arm64.go": {
+      "mode": "100644",
+      "blob": "24558a1c9d14109f55e6c88190b339c4c53571b4"
+    },
+    "upstream/collector/thermal_zone_linux.go": {
+      "mode": "100644",
+      "blob": "c7c58c29b30ea23afab5f8d3bae9635c39049112"
+    },
+    "upstream/collector/time.go": {
+      "mode": "100644",
+      "blob": "1851ba1a7e1a88a6aba321d3d6806a06f3d0e0c1"
+    },
+    "upstream/collector/time_linux.go": {
+      "mode": "100644",
+      "blob": "afd7208e3e06bfd39f2861be8d5dd094246a472d"
+    },
+    "upstream/collector/time_other.go": {
+      "mode": "100644",
+      "blob": "5658fe4810819c26e9a6f23dd3f2ddb4a185c4c0"
+    },
+    "upstream/collector/timex.go": {
+      "mode": "100644",
+      "blob": "6494726ef7881329ede3a9e4b5b4408586318e68"
+    },
+    "upstream/collector/udp_queues_linux.go": {
+      "mode": "100644",
+      "blob": "0ebd930098cd5f794145bbd796e8abaf1a9b228f"
+    },
+    "upstream/collector/uname.go": {
+      "mode": "100644",
+      "blob": "737a5a87128f2e3c17c507c34907d533fb984d4f"
+    },
+    "upstream/collector/uname_bsd.go": {
+      "mode": "100644",
+      "blob": "07f7aca063b2d7bbe74598b03bca989c85fcbb9b"
+    },
+    "upstream/collector/uname_linux.go": {
+      "mode": "100644",
+      "blob": "d3c4b5aefbf3633d12eb1de06f3ace60e4a2fa7c"
+    },
+    "upstream/collector/utils.go": {
+      "mode": "100644",
+      "blob": "6dea8f828a10cdc48bff337c4b33d8a3359771d7"
+    },
+    "upstream/collector/utils_test.go": {
+      "mode": "100644",
+      "blob": "ac36f6a0b10c8c3184b567dfc7c40e8db7fcf455"
+    },
+    "upstream/collector/vmstat_linux.go": {
+      "mode": "100644",
+      "blob": "987aebe9eb3a324c5999d3c5d9b449f3acd5ae9d"
+    },
+    "upstream/collector/watchdog.go": {
+      "mode": "100644",
+      "blob": "d3e041d5b8c02e8a5c45e8ad687e77ad8ae388cd"
+    },
+    "upstream/collector/watchdog_test.go": {
+      "mode": "100644",
+      "blob": "4fbcff7d536237405bf76fb7a0c08c99e61b1325"
+    },
+    "upstream/collector/wifi_linux.go": {
+      "mode": "100644",
+      "blob": "8f482c76ce8f06ce945f91b7b489abf5b725d471"
+    },
+    "upstream/collector/xfrm.go": {
+      "mode": "100644",
+      "blob": "f69d362c3229cd7826f42f152bbd1db4c6271a66"
+    },
+    "upstream/collector/xfrm_test.go": {
+      "mode": "100644",
+      "blob": "9598e113bf0a4ea5cd3e03520b69e50d59777abe"
+    },
+    "upstream/collector/xfs_linux.go": {
+      "mode": "100644",
+      "blob": "b5157849bc0abd3fbb8cbfe51fe32d2b916585b7"
+    },
+    "upstream/collector/zfs_common.go": {
+      "mode": "100644",
+      "blob": "f939ae99335e7632927f68dba47c3375396571ca"
+    },
+    "upstream/collector/zfs_freebsd.go": {
+      "mode": "100644",
+      "blob": "9354c96d15bc1169d4686147f4dc73eaaac4e71f"
+    },
+    "upstream/collector/zfs_linux.go": {
+      "mode": "100644",
+      "blob": "9e968f73fe09a5b0bdd514bd1a49f221f4740e23"
+    },
+    "upstream/collector/zfs_linux_test.go": {
+      "mode": "100644",
+      "blob": "29b9ede2d3e5368132cf4e56c29a95d2481f3f4e"
+    },
+    "upstream/collector/zfs_solaris.go": {
+      "mode": "100644",
+      "blob": "0f858ad9b0876230e28017994d14e6145ba3c0b9"
+    },
+    "upstream/collector/zoneinfo_linux.go": {
+      "mode": "100644",
+      "blob": "0b40fd3c5966b7691775874af9cc6e9f84e7b48c"
+    },
+    "upstream/docs/TIME.md": {
+      "mode": "100644",
+      "blob": "b1d52b704733b578da2353a54309a8ab4612c56d"
+    },
+    "upstream/docs/V0_16_UPGRADE_GUIDE.md": {
+      "mode": "100644",
+      "blob": "0a8bf24ee6585a15817eafdb2cf87d35c0b9ad0f"
+    },
+    "upstream/docs/example-16-compatibility-rules-new-to-old.yml": {
+      "mode": "100644",
+      "blob": "3d74eb5de7e1815b9076b54a5f35b24ddfe7c050"
+    },
+    "upstream/docs/example-16-compatibility-rules.yml": {
+      "mode": "100644",
+      "blob": "f05e1b4210fdef869e9fb0549880dd7329d0ba9b"
+    },
+    "upstream/docs/example-17-compatibility-rules-new-to-old.yml": {
+      "mode": "100644",
+      "blob": "da1520c9f446639503c764680a7e10f54864e3ef"
+    },
+    "upstream/docs/example-17-compatibility-rules.yml": {
+      "mode": "100644",
+      "blob": "e3d4d6626d7f2d81c0b4d1f168c435e0d7fe5c1e"
+    },
+    "upstream/docs/node-mixin/.gitignore": {
+      "mode": "100644",
+      "blob": "522b99f0bd228be41973d019cb1e472d0263bb6d"
+    },
+    "upstream/docs/node-mixin/Makefile": {
+      "mode": "100644",
+      "blob": "d04b37d00953c49f2616e1e3e2c1055095b4b526"
+    },
+    "upstream/docs/node-mixin/README.md": {
+      "mode": "100644",
+      "blob": "824385ec718febee257394a8666d3b0626bdb882"
+    },
+    "upstream/docs/node-mixin/alerts.jsonnet": {
+      "mode": "100644",
+      "blob": "75e7c1b297a2a3728de7eded136f3aa83cd03041"
+    },
+    "upstream/docs/node-mixin/alerts/alerts.libsonnet": {
+      "mode": "100644",
+      "blob": "29c934f57b49869b656dee3a459ea3d14a65424c"
+    },
+    "upstream/docs/node-mixin/config.libsonnet": {
+      "mode": "100644",
+      "blob": "ea31b595724781450a405a5392db553d98b854e6"
+    },
+    "upstream/docs/node-mixin/dashboards.jsonnet": {
+      "mode": "100644",
+      "blob": "9d913ed3f18c4be7f7ac8da35c6ebb0a09b52d49"
+    },
+    "upstream/docs/node-mixin/dashboards/dashboards.libsonnet": {
+      "mode": "100644",
+      "blob": "e6adbd4fa0253d937b91d2b31540a9f68541ea31"
+    },
+    "upstream/docs/node-mixin/dashboards/node.libsonnet": {
+      "mode": "100644",
+      "blob": "41e2903389bf1fa587f6d9c99187007582f6cf5e"
+    },
+    "upstream/docs/node-mixin/dashboards/use.libsonnet": {
+      "mode": "100644",
+      "blob": "9c219298cd2adff27f09a2ced8d35805d7a4ffba"
+    },
+    "upstream/docs/node-mixin/jsonnetfile.json": {
+      "mode": "100644",
+      "blob": "2d56d912452ca95e80894b7fecf61a69c595fbf6"
+    },
+    "upstream/docs/node-mixin/lib/prom-mixin.libsonnet": {
+      "mode": "100644",
+      "blob": "980baf5b7fc90ccc8512ca705b640a95b69b73bd"
+    },
+    "upstream/docs/node-mixin/mixin.libsonnet": {
+      "mode": "100644",
+      "blob": "b9831f9380b63f80d42f032810e652a50a68420c"
+    },
+    "upstream/docs/node-mixin/rules.jsonnet": {
+      "mode": "100644",
+      "blob": "dbe13f417b495b77b66ddb59f128bbf7f09e55b1"
+    },
+    "upstream/docs/node-mixin/rules/rules.libsonnet": {
+      "mode": "100644",
+      "blob": "7c2552f8b6f2d6eb8bd09f1bd4b8426d81bdcfb4"
+    },
+    "upstream/end-to-end-test.sh": {
+      "mode": "100755",
+      "blob": "b439cea5565c604f218fac06283f36ce84cb5b80"
+    },
+    "upstream/example-rules.yml": {
+      "mode": "100644",
+      "blob": "d9c125dab3d5e2f12f1c2eb25b43f7486595f5a8"
+    },
+    "upstream/examples/init.d/node_exporter": {
+      "mode": "100755",
+      "blob": "32c2deefdf018e4b00435ae0487e3aa448930501"
+    },
+    "upstream/examples/launchctl/README.md": {
+      "mode": "100644",
+      "blob": "bc390f2543f22d7e22be58e8be5fc83dbc75be59"
+    },
+    "upstream/examples/launchctl/io.prometheus.node_exporter.plist": {
+      "mode": "100644",
+      "blob": "f32ffb883520be211b1cdcb4e9aa4c0251d61e2b"
+    },
+    "upstream/examples/openbsd-rc.d/node_exporter": {
+      "mode": "100755",
+      "blob": "e0a73830d1f0eb1b3b7ca6d1414cfdcaeee2cb8a"
+    },
+    "upstream/examples/openwrt-init.d/node_exporter": {
+      "mode": "100755",
+      "blob": "1aed38becf27ed332ae88d011f4260aa5c46d0cd"
+    },
+    "upstream/examples/systemd/README.md": {
+      "mode": "100644",
+      "blob": "3b3577fa0ffa236e4aba32aa05d8cb193f0eb97d"
+    },
+    "upstream/examples/systemd/node_exporter.service": {
+      "mode": "100644",
+      "blob": "1ef24442d239e6dada165ef3c79be46f2c570769"
+    },
+    "upstream/examples/systemd/node_exporter.socket": {
+      "mode": "100644",
+      "blob": "c3e5670bfbb5b703a42939c97dd8a186a7e4a8ff"
+    },
+    "upstream/examples/systemd/sysconfig.node_exporter": {
+      "mode": "100644",
+      "blob": "8f95a01a397d279367cda81393575b5a8f5685d7"
+    },
+    "upstream/go.mod": {
+      "mode": "100644",
+      "blob": "7fa9aaa664bdbfcb79ad56e0c6e4c0b6efbe916c"
+    },
+    "upstream/go.sum": {
+      "mode": "100644",
+      "blob": "b6f9aef4553d5137b83c2ecd96e699b55ca95ea4"
+    },
+    "upstream/node_exporter.go": {
+      "mode": "100644",
+      "blob": "ac990dee299e9991665d989243e1e684b685ecba"
+    },
+    "upstream/node_exporter_test.go": {
+      "mode": "100644",
+      "blob": "0d6b41e4d54aade9edcb0842d61a7a5d6c6f4f63"
+    },
+    "upstream/staticcheck.conf": {
+      "mode": "100644",
+      "blob": "82a0d9b058c6cd3fe4fe5e9c0cc3ed42c91f282e"
+    },
+    "upstream/test_image.sh": {
+      "mode": "100755",
+      "blob": "4b47854dcd238991e89cc28d5c3e52e4acf2dbb8"
+    },
+    "upstream/text_collector_examples/README.md": {
+      "mode": "100644",
+      "blob": "3794261b0aa1f173a3487add172c10ccd1d9533a"
+    },
+    "upstream/tls_config_noAuth.bad.yml": {
+      "mode": "100644",
+      "blob": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391"
+    },
+    "upstream/tools/main.go": {
+      "mode": "100644",
+      "blob": "cfd4c1135e58bd2090ff0aa6f50f381681f8f815"
+    },
+    "upstream/ttar": {
+      "mode": "100755",
+      "blob": "e6cade76146ed42b954833e18e701bec24ce2c19"
+    }
+  },
+  "frozen_prefixes": [
+    "upstream/"
+  ],
+  "authority_hashes": {},
+  "required_text": {},
+  "structured_files": {
+    "governance/interim-release-policy.json": {
+      "schema_version": 1,
+      "policy_kind": "source_merge",
+      "repository": "appolon1908/Codestra-Node-Exporter",
+      "authorization_date": "2026-11-02",
+      "required_checks": [
+        {
+          "context": "frozen-vendor-documentation-source",
+          "integration_id": 15368,
+          "workflow": ".github/workflows/source-scope.yml"
+        }
+      ],
+      "replaces_contexts": [
+        "codestra-control-plane",
+        "codestra/control-plane"
+      ],
+      "preserve": [
+        "other_required_checks",
+        "review_requirements",
+        "ref_conditions",
+        "bypass_actors",
+        "enforcement",
+        "force_push_protection",
+        "deletion_protection",
+        "deployment_authority"
+      ],
+      "production_activation_authorized": false,
+      "note": "Only documentation additions outside the frozen baseline are validated. Every original vendor, config, lock and authority Git blob/mode remains immutable. This does not certify vendor code, runtime or vendor security and does not authorize deployment."
+    }
+  }
+}
